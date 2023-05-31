@@ -19,13 +19,13 @@ export const ContactUs = () => {
                             Contact Info
                         </h2>
                         <h3>
-                            Ministry of Health - Ethiopia.
+                            Ministry of Education - Ethiopia.
                         </h3>
                     </div>
                     <ContactInfo image={images.Map} content={"1234 Sudan Street"} content_={"Addis Ababa, Ethiopia"} />
                     <ContactInfo image={images.Phone} content={"(0251) 115517011"} />
                     <ContactInfo image={images.Save} content={"00251 11 551-9366"} />
-                    <ContactInfo image={images.Mail} content={"info@moh.gov.et"} />
+                    <ContactInfo image={images.Mail} content={"info@moe.gov.et"} />
                 </div>
             </div>
         </div>
@@ -53,12 +53,9 @@ export const ContactForm = () => {
                 <div className="flex flex-col p-2 items-start gap-2">
                     <label className="text-sm capitalize text-gray-500 font-bold">message</label>
                     <textarea rows={5} name="" id="" className="w-[90%] hover:shadow focus:shadow bg-gray-100" /></div>
-                <div className="flex gap-5 m-2">
+                <div className="flex justify-end mr-24">
                     <button className="btn-color-gb py-3 px-4 text-white font-bold text-sm flex items-center uppercase hover:shadow">
                         <p>Send message</p>
-                    </button>
-                    <button className="btn-color-gb py-3 px-4 text-white font-bold text-sm flex items-center uppercase hover:shadow">
-                        <p>preview</p>
                     </button>
                 </div>
             </form>

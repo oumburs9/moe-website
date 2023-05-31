@@ -103,24 +103,6 @@ const Mission = () => {
               <button className="bg-[#21618c] text-white py-3 px-6 rounded-sm shadow-blue-200 shadow-md"><strong>VIEW ALL</strong></button>
             </div>
           </div>
-          <div>
-            <h2 className="border-b border-gray-300 text-[25px] py-2 my-[1em]">Projects</h2>
-            <div className="">
-              <div className="flex gap-5 mb-5">
-                <img src= {image2} alt="" className="h-20 w-20" />
-                <p>Continouse professional development</p>
-              </div>
-              <div className="flex gap-5 mb-5">
-                <img src= {image2} alt="" className="h-20 w-20" />
-                <p>Continouse professional development</p>
-              </div>
-              <div className="flex gap-5 mb-5">
-                <img src= {image2} alt="" className="h-20 w-20" />
-                <p>Continouse professional development</p>
-              </div>
-              <button className="bg-[#21618c] text-white py-3 px-6 rounded-sm shadow-blue-200 shadow-md"><strong>VIEW ALL</strong></button>
-            </div>
-          </div>
         </div>
       </div>
      
