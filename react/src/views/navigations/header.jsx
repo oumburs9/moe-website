@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import {  BsFillEnvelopeFill } from 'react-icons/bs';
+
 
 
 const Dropdown = ( props) => {
@@ -53,6 +55,7 @@ const Dropdown = ( props) => {
             {items.map((item, index) => (
             <li key = {index}> 
               <Link
+                onClick={handleDropdownOff}
                 to = {item.link}
                 className="w-full block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white "
               >
@@ -109,13 +112,17 @@ const Navbar = () => {
   return (
     <nav className="bg-white  w-full m-0 shadow-md">
       <div className=" w-full max-w-screen-xl flex flex-wrap justify-between h-min mx-auto py-3.5 px-16">
-        <a href="#" className="flex items-center justify-center text-justify h-full py-2">
+        <Link to='/' className="flex items-center justify-center text-justify h-full py-2">
           <img
-            src="https://www.moh.gov.et/site/sites/default/files/logomohnewww.png"
-            className="h-full max-w-full align-middle self-center"
+            src="https://moe.gov.et/logom.png"
+            className="h-16 max-w-full align-middle self-center"
             alt="Moe Logo"
           />
-        </a>
+          <a className ="flex flex-col text-[#21618c] font-black font-serif pl-4">
+						<span id="text" className="flex">ትምህርት ሚኒስቴር</span> 
+						<span id="text" className="flex">Ministry Of Education</span> 
+					</a>
+        </Link>
         <button
           onClick={toggleMenu}
           type="button"
@@ -146,8 +153,8 @@ const Navbar = () => {
           } w-full md:block md:w-min py-3.5`}
           id="navbar-dropdown"
         >
-          <div className="flex self-end">
-          <ul className="flex flex-col items-end justify-end text-end h-full font-medium border border-red-500 rounded-lg bg-gray-50 md:flex-row  md:border-0 md:bg-white md:w-min  dark:border-gray-700">
+          <div className="flex self-center">
+          <ul className="flex flex-col items-center justify-center text-end h-full font-medium border border-red-500 rounded-lg bg-gray-50 md:flex-row  md:border-0 md:bg-white md:w-min  dark:border-gray-700">
             <Dropdown isMenuOpen = {isMenuOpen}   name = "About" items = {aboutItems} sideBar = {false} />
             <Dropdown isMenuOpen = {isMenuOpen}  name = "Programs" items = {aboutItems} sideBar = {false}/>
             <Dropdown isMenuOpen = {isMenuOpen} name = "Pilliars" items = {aboutItems} sideBar = {false}/>
@@ -155,8 +162,8 @@ const Navbar = () => {
             <Dropdown isMenuOpen = {isMenuOpen} name = "News" items = {aboutItems} sideBar = {false}/>
             
             <li>
-            <button className="block p-4 text-gray-900 rounded md:w-max align-middle text-center md:shadow-[#8bbfe2] md:shadow-lg md:py-3 md:px-8 text-white md:bg-[#21618c]">
-                # Contact
+            <button className="flex p-4 ml-5 text-gray-900 rounded md:w-max align-middle text-center md:shadow-[#8bbfe2] md:shadow-lg md:py-3 md:px-8 text-white md:bg-[#21618c]">
+            <span className=" flex items-center justify-between ml-1 font-white ">< BsFillEnvelopeFill/><span className="px-2"> Contact</span></span> 
             </button>
             </li>
           </ul>
