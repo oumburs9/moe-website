@@ -35,7 +35,6 @@ const Dropdown = ( props) => {
         // onMouseLeave={handleDropdownToggle}
       >
         {name}
-         <span className=" h-full ml-1 font-black text-[16px]">+</span>
       </button> }
 
       {isDropdownOpen && (
