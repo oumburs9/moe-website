@@ -1,6 +1,13 @@
-import image  from "../../images/Dr.Lia.png";
+import image  from "../../images/Pr.Brihanu.nega.png";
 import image2  from "../../images/initiative.png";
-function Mission() {
+import React, { useEffect } from "react";
+
+const Mission = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src="https://platform.twitter.com/widgets.js";
+    document.getElementsByClassName("twitter-embed")[0].appendChild(script);
+  }, []);
 
   return (
     <>
@@ -71,31 +78,32 @@ function Mission() {
             </div>
           </div>
         </div>
-        <div className="md:col-span-3 p-4">
+        <div className="md:col-span-3 pl-4">
           <div className="">
             <div className="text-center">
               <div className="rounded-md overflow-hidden">
                 <img src = {image} alt="Dr.Lia Taddesse" />
               </div>
               <div className="text-center text-gray-500">
-                <span><strong>Dr.Lia Taddesse</strong></span><br />
-                <span><strong>Ministry of Health</strong></span>
+                <span><strong>Pr.Birhanu Nega</strong></span><br />
+                <span><strong>Ministry of Education</strong></span>
               </div>
               <a href="http://"><strong>Read more</strong></a>
             </div>
           </div>
           <div className="my-[3em]">
-            <div className="">
-              <a href="https://twitter.com/FMoHealth?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3AFMoHealth%7Ctwcon%5Es2">
-                  <div className="border border-gray-300 rounded-t-xl text-black text-[20px] p-2 hover:bg-blue-50">
-                    <strong>Tweets from @FMoHealth</strong>
-                  </div>
-              </a>
-              <iframe src="https://twitter.com/FMoHealth/status/1663538568114110467?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3AFMoHealth%7Ctwcon%5Es1" frameborder="1"
-                className="border border-gray-300 border-t-0 rounded-b-xl h-[85vh] w-full overflow-y-scroll">
-                Tweets by MOH
-              </iframe>
-            </div>
+            <section className="twitterContainer">
+              <div className="twitter-embed">
+                <a
+                  className="twitter-timeline"
+                  data-width="263" 
+                  data-height="600" 
+                  href="https://twitter.com/fdremoe?ref_src=twsrc%5Etfw"
+                >
+                  Tweets by MOE
+                </a>
+              </div>
+            </section>
           </div>
           <div className="">
             <div className="flex text-[16px]">
