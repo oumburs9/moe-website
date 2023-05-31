@@ -77,7 +77,20 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   const aboutItems = [
-    {name: "Mission, Vision and Objectives", link: "/test", hasDropDown: false, },
+    {name: "Mission, Vision and Objectives", link: "/about/mission-and-vision", hasDropDown: false, },
+    {name: "Organizational Structure", link: "google.com", hasDropDown : false},
+    {name: "Who is who", link: "google.com", hasDropDown: true},
+    {name: "Directorates", link: "google.com", hasDropDown: false},
+    {name: "Health Service Providers (Facilities)", link: "google.com", hasDropDown: false},
+    {name: "Fact Sheets", link: "google.com", hasDropDown: false},
+    {name: "Our Digital Health Systems", link: "google.com", hasDropDown: false},
+    {name: "Development Partners", link: "google.com", hasDropDown: false},
+    {name: "Regional Health Bureaus", link: "google.com", hasDropDown: false},
+    {name: "Agencies", link: "google.com", hasDropDown: false},
+    {name: "Professional Associations", link: "google.com", hasDropDown: false},
+    {name: "Multisectoral Collaboration", link: "google.com", hasDropDown: false}];
+  const resourceItems = [
+    {name: "Policies-and-strategies", link: "/resources/policies-and-strategies", hasDropDown: false, },
     {name: "Organizational Structure", link: "google.com", hasDropDown : false},
     {name: "Who is who", link: "google.com", hasDropDown: true},
     {name: "Directorates", link: "google.com", hasDropDown: false},
@@ -138,7 +151,7 @@ const Navbar = () => {
             <Dropdown isMenuOpen = {isMenuOpen}   name = "About" items = {aboutItems} sideBar = {false} />
             <Dropdown isMenuOpen = {isMenuOpen}  name = "Programs" items = {aboutItems} sideBar = {false}/>
             <Dropdown isMenuOpen = {isMenuOpen} name = "Pilliars" items = {aboutItems} sideBar = {false}/>
-            <Dropdown isMenuOpen = {isMenuOpen} name = "Resources" items = {aboutItems} sideBar = {false}/>
+            <Dropdown isMenuOpen = {isMenuOpen} name = "Resources" items = {resourceItems} sideBar = {false}/>
             <Dropdown isMenuOpen = {isMenuOpen} name = "News" items = {aboutItems} sideBar = {false}/>
             
             <li>
