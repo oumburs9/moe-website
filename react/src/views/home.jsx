@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileText } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
-import lipImage from '../assets/2022-03/lip.jpg';
+import lipImage from '../images/initiative.png';
 
 const Home = () => {
   const [hoveredImage, setHoveredImage] = useState(null);
