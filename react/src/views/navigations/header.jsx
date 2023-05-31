@@ -21,18 +21,16 @@ const Dropdown = ( props) => {
     onMouseLeave={handleDropdownOff}
     >
 
-      {sideBar ? <a href="#"  className="border-b-2 w-full flex py-2 text-[#21618c]"
+      {sideBar ? <a href="#"  className="border-b-2 w-full flex py-2 text-[#156584]"
       
       id="dropdownNavbarLink"
         data-dropdown-toggle="dropdownNavbar"
-        // className="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
         onMouseEnter={handleDropdownOn}
       > <span className=""> {name} </span> </a> :<button
         id="dropdownNavbarLink"
         data-dropdown-toggle="dropdownNavbar"
-        className="flex items-center font-Helvetica text-[13px] font-medium uppercase justify-between w-full py-1.5 pl-3 pr-4 rounded text-[#21618c]"
+        className="flex items-center font-Helvetica text-[13px] font-medium uppercase justify-between w-full py-1.5 pl-3 pr-4 rounded text-[#156584] whitespace-nowrap"
         onMouseEnter={handleDropdownOn}
-        // onMouseLeave={handleDropdownToggle}
       >
         {name}
       </button> }
@@ -59,7 +57,7 @@ const Dropdown = ( props) => {
                 className="w-full block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white "
               >
                 {item.hasDropDown || item.name}
-               {item.hasDropDown ?  <Dropdown isMenuOpen = {isMenuOpen}   name = {item.name} items = {[{name: "Who is whoadfafadf", hasDropDown: true,} ]} sideBar = {true}/> : <div> </div>}
+               {item.hasDropDown ?  <Dropdown isMenuOpen = {isMenuOpen}   name = {item.name} items = {[{name: "Who is who", hasDropDown: true,} ]} sideBar = {true}/> : <div> </div>}
               </Link>
             </li>
 
@@ -79,31 +77,45 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   const aboutItems = [
-    {name: "Mission, Vision and Objectives", link: "/about/mission-and-vision", hasDropDown: false, },
+    {name: "Mission, Vision and Values", link: "/about/mission-and-vision", hasDropDown: false, },
     {name: "Organizational Structure", link: "google.com", hasDropDown : false},
-    {name: "Who is who", link: "google.com", hasDropDown: true},
-    {name: "Directorates", link: "google.com", hasDropDown: false},
-    {name: "Health Service Providers (Facilities)", link: "google.com", hasDropDown: false},
+    {name: "Who is who", link: "google.com", hasDropDown: false},
+    {name: "Power and Duties", link: "google.com", hasDropDown: false},
+    {name: "Partners and Stakeholders", link: "google.com", hasDropDown: false},
     {name: "Fact Sheets", link: "google.com", hasDropDown: false},
-    {name: "Our Digital Health Systems", link: "google.com", hasDropDown: false},
-    {name: "Development Partners", link: "google.com", hasDropDown: false},
-    {name: "Regional Health Bureaus", link: "google.com", hasDropDown: false},
-    {name: "Agencies", link: "google.com", hasDropDown: false},
-    {name: "Professional Associations", link: "google.com", hasDropDown: false},
-    {name: "Multisectoral Collaboration", link: "google.com", hasDropDown: false}];
+    {name: "Agencies", link: "google.com", hasDropDown: false}];
+  
+  const educationSectorItems = [
+    {name: "Higher Education", link: "/resources/policies-and-strategies", hasDropDown: true},
+    {name: "General Education", link: "google.com", hasDropDown : true}];
+
+  const higherEducationItems = [
+    {name: "Higher Education", link: "/resources/policies-and-strategies", hasDropDown: false},
+    {name: "General Education", link: "google.com", hasDropDown : false}];
+
+  const generalEducationItems = [
+    {name: "Chief Executive Offices", link: "/resources/policies-and-strategies", hasDropDown: false},
+    {name: "Executive Offices", link: "google.com", hasDropDown : false}];
+  
+  const announcementItems = [
+    {name: "Job Vacancies", link: "/resources/policies-and-strategies", hasDropDown: false, },
+    {name: "Notices", link: "google.com", hasDropDown : false},
+    {name: "Tender", link: "google.com", hasDropDown: false}];
+
   const resourceItems = [
     {name: "Policies-and-strategies", link: "/resources/policies-and-strategies", hasDropDown: false, },
-    {name: "Organizational Structure", link: "google.com", hasDropDown : false},
-    {name: "Who is who", link: "google.com", hasDropDown: true},
-    {name: "Directorates", link: "google.com", hasDropDown: false},
-    {name: "Health Service Providers (Facilities)", link: "google.com", hasDropDown: false},
-    {name: "Fact Sheets", link: "google.com", hasDropDown: false},
-    {name: "Our Digital Health Systems", link: "google.com", hasDropDown: false},
-    {name: "Development Partners", link: "google.com", hasDropDown: false},
-    {name: "Regional Health Bureaus", link: "google.com", hasDropDown: false},
-    {name: "Agencies", link: "google.com", hasDropDown: false},
-    {name: "Professional Associations", link: "google.com", hasDropDown: false},
-    {name: "Multisectoral Collaboration", link: "google.com", hasDropDown: false}];
+    {name: "Guidlines and Standards", link: "google.com", hasDropDown : false},
+    {name: "Plans and Reports", link: "google.com", hasDropDown: false},
+    {name: "Annual Abstracts", link: "google.com", hasDropDown: false},
+    {name: "Digital Library", link: "google.com", hasDropDown: false},
+    {name: "E Learning", link: "google.com", hasDropDown: false},
+    {name: "Others", link: "google.com", hasDropDown: false}];
+  
+  const mediaItems = [
+    {name: "News", link: "/resources/policies-and-strategies", hasDropDown: false, },
+    {name: "Magazines", link: "google.com", hasDropDown : false},
+    {name: "Press Releases", link: "google.com", hasDropDown: false},
+    {name: "Gallery", link: "google.com", hasDropDown: false}];
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -155,10 +167,10 @@ const Navbar = () => {
           <div className="flex self-center">
           <ul className="flex flex-col items-center justify-center text-end h-full font-medium border border-red-500 rounded-lg bg-gray-50 md:flex-row  md:border-0 md:bg-white md:w-min  dark:border-gray-700">
             <Dropdown isMenuOpen = {isMenuOpen}   name = "About" items = {aboutItems} sideBar = {false} />
-            <Dropdown isMenuOpen = {isMenuOpen}  name = "Education sector" items = {aboutItems} sideBar = {false}/>
-            <Dropdown isMenuOpen = {isMenuOpen} name = "Announcement" items = {aboutItems} sideBar = {false}/>
+            <Dropdown isMenuOpen = {isMenuOpen}  name = "Education sector" items = {educationSectorItems} sideBar = {false}/>
+            <Dropdown isMenuOpen = {isMenuOpen} name = "Announcement" items = {announcementItems} sideBar = {false}/>
             <Dropdown isMenuOpen = {isMenuOpen} name = "Resources" items = {resourceItems} sideBar = {false}/>
-            <Dropdown isMenuOpen = {isMenuOpen} name = "Media" items = {aboutItems} sideBar = {false}/>
+            <Dropdown isMenuOpen = {isMenuOpen} name = "Media" items = {mediaItems} sideBar = {false}/>
             {/* <Dropdown isMenuOpen = {isMenuOpen} name = "Langua" items = {aboutItems} sideBar = {false}/> */}
 
             <li>

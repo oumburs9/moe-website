@@ -33,12 +33,12 @@ function TopNavBar() {
         </div>
         <div className="flex align-middle justify-cente text-md text-[13] text-white">
           <a href="#responsive-header" className="flex align-middle justify-cente text-md text-[13] text-white">
-          <span className='text-[rgba(255,255,255,0.90)] hover:animate-bounce_1s_ease-in-ease-out  h-2/3 text-[13px] rounded'>En</span>
+          <span className='text-[rgba(255,255,255,0.90)] hover:animate-bounce_1s_ease-in-ease-out  h-2/3 text-[13px] rounded'>Eng</span>
             
           </a>
           <span className='text-[rgba(255,255,255,0.90)] hover:animate-bounce_1s_ease-in-ease-out  h-2/3 text-[13px] rounded px-[1px]'>|</span>
           <a href="#responsive-header" className="flex align-middle justify-cente text-md text-[13] text-white">
-          <span className='text-[rgba(255,255,255,0.90)] hover:animate-bounce_1s_ease-in-ease-out  h-2/3 text-[13px] rounded px-[1px]'>አማ</span>
+          <span className='text-[rgba(255,255,255,0.90)] hover:animate-bounce_1s_ease-in-ease-out  h-2/3 text-[13px] rounded px-[1px]'>አማር</span>
             
           </a>
                
