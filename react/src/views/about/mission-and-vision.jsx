@@ -71,7 +71,7 @@ function Mission() {
             </div>
           </div>
         </div>
-        <div className="md:col-span-3 p-4">
+        <div className="md:col-span-3 pl-4">
           <div className="">
             <div className="text-center">
               <div className="rounded-md overflow-hidden">

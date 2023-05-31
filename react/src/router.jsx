@@ -1,7 +1,7 @@
 
 import {createBrowserRouter} from 'react-router-dom';
 import App from './App';
-import Mission from './views/about/mission';
+import Mission from './views/about/mission-and-vision';
 import PoliciesAndStrategies from './views/Resources/policies-and-strategies'
 // import Header from './views/navigations/header';
 // import Test from './views/navigations/test';
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
         element: <App/>,
         children: [
             {
-                path: '/about/mission',
+                path: '/about/mission-and-vision',
                 element: <Mission/>
             },
             {
