@@ -86,15 +86,10 @@ function Mission() {
           </div>
           <div className="my-[3em]">
             <div className="">
-              <a href="https://twitter.com/FMoHealth?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3AFMoHealth%7Ctwcon%5Es2">
-                  <div className="border border-gray-300 rounded-t-xl text-black text-[20px] p-2 hover:bg-blue-50">
-                    <strong>Tweets from @FMoHealth</strong>
-                  </div>
-              </a>
-              <iframe src="https://twitter.com/FMoHealth/status/1663538568114110467?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3AFMoHealth%7Ctwcon%5Es1" frameborder="1"
-                className="border border-gray-300 border-t-0 rounded-b-xl h-[85vh] w-full overflow-y-scroll">
-                Tweets by MOH
-              </iframe>
+              <a class="twitter-timeline" data-width="260" data-height="600" href="https://twitter.com/FMoHealth?ref_src=twsrc%5Etfw">
+                Tweets by FMoHealth
+              </a> 
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>
           <div className="">
