@@ -1,4 +1,4 @@
-import image  from "../../images/Dr.Lia.png";
+import image  from "../../images/Pr.Brihanu.nega.png";
 import image2  from "../../images/initiative.png";
 import React, { useEffect } from "react";
 
@@ -85,8 +85,8 @@ const Mission = () => {
                 <img src = {image} alt="Dr.Lia Taddesse" />
               </div>
               <div className="text-center text-gray-500">
-                <span><strong>Dr.Lia Taddesse</strong></span><br />
-                <span><strong>Ministry of Health</strong></span>
+                <span><strong>Pr.Birhanu Nega</strong></span><br />
+                <span><strong>Ministry of Education</strong></span>
               </div>
               <a href="http://"><strong>Read more</strong></a>
             </div>
