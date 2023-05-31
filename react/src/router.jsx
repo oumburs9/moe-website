@@ -5,7 +5,7 @@ import Mission from './views/about/mission-and-vision';
 import PoliciesAndStrategies from './views/Resources/policies-and-strategies'
 import Home from './views/home';
 // import Header from './views/navigations/header';
-// import Test from './views/navigations/test';
+import Test from './views/navigations/test';
 // import Home from './views/home';
 
 const router = createBrowserRouter([
@@ -31,9 +31,12 @@ const router = createBrowserRouter([
                 element:<ContactUs/>
             }
         //add other routes
-        ]
-       
-    }
+        ],
+    },  
+     {
+        path: '/test',
+        element: <Test/>
+    },
 ]);
 
 export default router;
