@@ -1,6 +1,13 @@
 import image  from "../../images/Dr.Lia.png";
 import image2  from "../../images/initiative.png";
-function Mission() {
+import React, { useEffect } from "react";
+
+const Mission = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src="https://platform.twitter.com/widgets.js";
+    document.getElementsByClassName("twitter-embed")[0].appendChild(script);
+  }, []);
 
   return (
     <>
@@ -85,12 +92,18 @@ function Mission() {
             </div>
           </div>
           <div className="my-[3em]">
-            <div className="">
-              <a class="twitter-timeline" data-width="260" data-height="600" href="https://twitter.com/FMoHealth?ref_src=twsrc%5Etfw">
-                Tweets by FMoHealth
-              </a> 
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
+            <section className="twitterContainer">
+              <div className="twitter-embed">
+                <a
+                  className="twitter-timeline"
+                  data-width="263" 
+                  data-height="600" 
+                  href="https://twitter.com/fdremoe?ref_src=twsrc%5Etfw"
+                >
+                  Tweets by MOE
+                </a>
+              </div>
+            </section>
           </div>
           <div className="">
             <div className="flex text-[16px]">
