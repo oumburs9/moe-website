@@ -156,11 +156,12 @@ const Navbar = () => {
           <div className="flex self-center">
           <ul className="flex flex-col items-center justify-center text-end h-full font-medium border border-red-500 rounded-lg bg-gray-50 md:flex-row  md:border-0 md:bg-white md:w-min  dark:border-gray-700">
             <Dropdown isMenuOpen = {isMenuOpen}   name = "About" items = {aboutItems} sideBar = {false} />
-            <Dropdown isMenuOpen = {isMenuOpen}  name = "Programs" items = {aboutItems} sideBar = {false}/>
-            <Dropdown isMenuOpen = {isMenuOpen} name = "Pilliars" items = {aboutItems} sideBar = {false}/>
+            <Dropdown isMenuOpen = {isMenuOpen}  name = "Education sector" items = {aboutItems} sideBar = {false}/>
+            <Dropdown isMenuOpen = {isMenuOpen} name = "Announcement" items = {aboutItems} sideBar = {false}/>
             <Dropdown isMenuOpen = {isMenuOpen} name = "Resources" items = {resourceItems} sideBar = {false}/>
-            <Dropdown isMenuOpen = {isMenuOpen} name = "News" items = {aboutItems} sideBar = {false}/>
-            
+            <Dropdown isMenuOpen = {isMenuOpen} name = "Media" items = {aboutItems} sideBar = {false}/>
+            {/* <Dropdown isMenuOpen = {isMenuOpen} name = "Langua" items = {aboutItems} sideBar = {false}/> */}
+
             <li>
             <Link to={'/contact'}>
               <button className="flex p-4 ml-5 text-gray-900 rounded md:w-max align-middle text-center md:shadow-[#8bbfe2] md:shadow-lg md:py-3 md:px-8 text-white md:bg-[#21618c]">
