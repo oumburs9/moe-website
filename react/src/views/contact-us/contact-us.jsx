@@ -69,7 +69,7 @@ export const ContactForm = () => {
 export const ContactInfo = ({ image, content, content_ }) => {
     return (
         <div className="flex gap-4 p-3 items-center">
-            <div className='contact-icon w-[70px] h-[70px] rounded-full flex items-center justify-center'>
+            <div className='contact-icon w-[60px] h-[60px] rounded-full flex items-center justify-center'>
                 <img src={image} alt="" className='w-[50%] h-[50%]' />
             </div>
             <div className="flex flex-col items-start">

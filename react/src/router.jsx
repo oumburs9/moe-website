@@ -4,8 +4,9 @@ import App from './App';
 import Mission from './views/about/mission-and-vision';
 import PoliciesAndStrategies from './views/Resources/policies-and-strategies'
 import Home from './views/home';
+import { ContactUs } from './views/contact-us/contact-us';
 // import Header from './views/navigations/header';
-import Test from './views/navigations/test';
+// import Test from './views/navigations/test';
 // import Home from './views/home';
 
 const router = createBrowserRouter([
@@ -33,10 +34,7 @@ const router = createBrowserRouter([
         //add other routes
         ],
     },  
-     {
-        path: '/test',
-        element: <Test/>
-    },
+     
 ]);
 
 export default router;

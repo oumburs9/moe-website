@@ -162,9 +162,12 @@ const Navbar = () => {
             <Dropdown isMenuOpen = {isMenuOpen} name = "News" items = {aboutItems} sideBar = {false}/>
             
             <li>
-            <button className="flex p-4 ml-5 text-gray-900 rounded md:w-max align-middle text-center md:shadow-[#8bbfe2] md:shadow-lg md:py-3 md:px-8 text-white md:bg-[#21618c]">
-            <span className=" flex items-center justify-between ml-1 font-white ">< BsFillEnvelopeFill/><span className="px-2"> Contact</span></span> 
-            </button>
+            <Link to={'/contact'}>
+              <button className="flex p-4 ml-5 text-gray-900 rounded md:w-max align-middle text-center md:shadow-[#8bbfe2] md:shadow-lg md:py-3 md:px-8 text-white md:bg-[#21618c]">
+                <span className=" flex items-center justify-between ml-1 font-white ">< BsFillEnvelopeFill/><span className="px-2"> Contact</span></span> 
+              </button>
+            </Link>
+            
             </li>
           </ul>
           </div>
