@@ -144,21 +144,21 @@ function Ministers() {
       url: 'https://moe.gov.et/storage/minimsg/%E1%8C%B0%E1%8C%B0%E1%8C%B02014_1634039719.jpg',
       name: 'H.E Pro. Birhanu Nega',
       title: 'MINISTER',
-      desc: 'Continuous professional Developmen'
+      desc: 'Description about the minister should be included here ......(H.E Pro. Birhanu Nega)'
     },
     {
       id: 2,
       url: 'https://moe.gov.et/storage/minimsg/photo_2021-10-12_15-45-11_1634042555.jpg',
       name: 'Samuel Kifle (PhD)',
       title: 'State Ministers',
-      desc: 'holy Leadership Incubation for Health Professional '
+      desc: 'Description about the state minister should be included here ......(Samuel Kifle (PhD))'
     },
     {
       id: 3,
       url: 'https://moe.gov.et/storage/minimsg/photo_2021-10-12_15-33-45_1634042442.jpg',
       name: 'Fanta Mandefro (PhD)',
       title: 'State Ministers',
-      desc: 'National Medical Education initiiative'
+      desc: 'Description about the minister should be included here ......(Fanta Mandefro (PhD))'
     },
   ];
 
