@@ -7,6 +7,7 @@ import { faFileText } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
 import lipImage from '../images/initiative.png';
+import { Slider } from './slider/Slider';
 
 const Home = () => {
   const [hoveredImage, setHoveredImage] = useState(null);
@@ -60,6 +61,7 @@ const Home = () => {
   return (
     <>
 {/* <Outlet/> */}
+      <Slider/>
       <div className="flex flex-col content-center justify-center">
         <div>
           <h3 className="text-center font-sans text-5xl text-blue-700 leading-tight">ዜና | News</h3>
