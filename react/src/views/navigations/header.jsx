@@ -79,7 +79,7 @@ const Navbar = () => {
   const aboutItems = [
     {name: "Mission, Vision and Values", link: "/about/mission-and-vision", hasDropDown: false, },
     {name: "Organizational Structure", link: "google.com", hasDropDown : false},
-    {name: "Who is who", link: "google.com", hasDropDown: false},
+    {name: "Who is who", link: "/about/who-is-who", hasDropDown: false},
     {name: "Power and Duties", link: "google.com", hasDropDown: false},
     {name: "Partners and Stakeholders", link: "google.com", hasDropDown: false},
     {name: "Fact Sheets", link: "google.com", hasDropDown: false},
