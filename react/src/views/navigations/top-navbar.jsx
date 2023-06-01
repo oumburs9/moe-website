@@ -5,7 +5,7 @@ import * as SomeModule2 from 'react-icons/bs';
 function TopNavBar() {
   return (
 
-    <nav className="flex items-center justify-between flex-wrap  bg-[#21618c] w-full py-2">
+    <nav className="flex items-center justify-between flex-wrap  bg-[#156584] w-full py-2">
 
       <div className="menu w-full flex flex-grow items-center justify-evenly lg:w-auto lg:px-3 px-8">
         <div className="flex align-middle items-center justify-center text-md font-bold text-blue-700"> 
@@ -33,26 +33,14 @@ function TopNavBar() {
         </div>
         <div className="flex align-middle justify-cente text-md text-[13] text-white">
           <a href="#responsive-header" className="flex align-middle justify-cente text-md text-[13] text-white">
-          <span className='text-[rgba(255,255,255,0.90)] hover:animate-bounce_1s_ease-in-ease-out  h-2/3 text-[13px] rounded'>En</span>
+          <span className='text-[rgba(255,255,255,0.90)] hover:animate-bounce_1s_ease-in-ease-out  h-2/3 text-[13px] rounded'>Eng</span>
             
           </a>
           <span className='text-[rgba(255,255,255,0.90)] hover:animate-bounce_1s_ease-in-ease-out  h-2/3 text-[13px] rounded px-[1px]'>|</span>
           <a href="#responsive-header" className="flex align-middle justify-cente text-md text-[13] text-white">
-          <span className='text-[rgba(255,255,255,0.90)] hover:animate-bounce_1s_ease-in-ease-out  h-2/3 text-[13px] rounded px-[1px]'>አማ</span>
+          <span className='text-[rgba(255,255,255,0.90)] hover:animate-bounce_1s_ease-in-ease-out  h-2/3 text-[13px] rounded px-[1px]'>አማር</span>
             
           </a>
-          <span className='text-[rgba(255,255,255,0.90)] hover:animate-bounce_1s_ease-in-ease-out  h-2/3 text-[13px] rounded px-[1px]'>|</span>
-          <a href="#responsive-header" className="flex align-middle justify-cente text-md text-[13] text-white">
-          <span className='text-[rgba(255,255,255,0.90)] hover:animate-bounce_1s_ease-in-ease-out  h-2/3 text-[13px] rounded px-[1px]'>Or</span>
-            
-          </a>
-          <span className='text-[rgba(255,255,255,0.90)] hover:animate-bounce_1s_ease-in-ease-out  h-2/3 text-[13px] rounded px-[1px]'>|</span>
-          <a href="#responsive-header" className="flex align-middle justify-cente text-md text-[13] text-white">
-
-<span className='text-[rgba(255,255,255,0.90)] hover:animate-bounce_1s_ease-in-ease-out  h-2/3 text-[13px] rounded px-[1px]'>ትግ</span>
-            
-          </a>
-          <span className='text-[rgba(255,255,255,0.90)] hover:animate-bounce_1s_ease-in-ease-out  h-2/3 text-[13px] rounded px-[1px]'>|</span>
                
         </div>
 

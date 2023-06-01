@@ -1,8 +1,10 @@
 import { Outlet } from "react-router-dom";
 
+import TopNavBar from './views/navigations/top-navbar'
 import Navbar from './views/navigations/header'
 
-import TopNavBar from './views/navigations/top-navbar'
+import Footer from './views/navigations/footer'
+
 function App() {
 
   return (
@@ -10,6 +12,7 @@ function App() {
     <TopNavBar/>
     <Navbar/>
     <Outlet/>
+    <Footer/>
     </>
   )
 }
