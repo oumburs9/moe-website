@@ -211,7 +211,7 @@ function Ministers() {
             <ul
               key={slideIndex}
               onClick={() => goToSlide(slideIndex)}
-              className="text-[16px] cursor-pointer  md:text-white flex m-auto max-md:w-full"
+              className="text-[16px] cursor-pointer md:contact-icon md:text-white flex m-auto max-md:w-full"
             >
               <li className="flex items-center  max-md:w-full">
                 <BsChevronCompactRight className="mr-2" />
