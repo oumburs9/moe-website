@@ -3,10 +3,10 @@ import * as SomeModule2 from 'react-icons/bs';
 
 function Footer() {
     return (
-        <footer class="bg-white dark:bg-gray-900 mt-10">
+        <footer class="bg-[#156584] dark:bg-gray-900 mt-10">
             <div class="container px-6 py-12 mx-auto">
                 <div class="md:flex md:-mx-3 md:items-center md:justify-between">
-                    <h1 class="text-xl font-semibold tracking-tight text-gray-800 md:mx-3 xl:text-2xl dark:text-white">Subscribe our newsletter to get update.</h1>
+                    <h1 class="text-xl font-extrabold tracking-tight text-black md:mx-3 xl:text-2xl dark:text-white">Subscribe our newsletter to get update.</h1>
                     
                     <div class="mt-6 md:mx-3 shrink-0 md:mt-0 md:w-auto">
                         <a href="#" class="inline-flex items-center justify-center w-full px-4 py-2 text-sm text-white duration-300 bg-gray-800 rounded-lg gap-x-3 hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
@@ -23,50 +23,50 @@ function Footer() {
 
                 <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     <div>
-                        <p class="font-semibold text-gray-800 dark:text-white">Quick Link</p>
+                        <p class="font-extrabold text-black dark:text-white">Quick Link</p>
 
                         <div class="flex flex-col items-start mt-5 space-y-2">
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Home</a>
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">About</a>
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Resources</a>
+                            <a href="#" class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Home</a>
+                            <a href="#" class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">About</a>
+                            <a href="#" class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Resources</a>
                         </div>
                     </div>
 
                     <div>
-                        <p class="font-semibold text-gray-800 dark:text-white">Industries</p>
+                        <p class="font-extrabold text-black dark:text-white">Announcement</p>
 
                         <div class="flex flex-col items-start mt-5 space-y-2">
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Retail & E-Commerce</a>
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Information Technology</a>
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Finance & Insurance</a>
+                            <a href="#" class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Notices</a>
+                            <a href="#" class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Job Vacancies</a>
+                            <a href="#" class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Tender</a>
                         </div>
                     </div>
 
                     <div>
-                        <p class="font-semibold text-gray-800 dark:text-white">Services</p>
+                        <p class="font-extrabold text-black dark:text-white">Media</p>
 
                         <div class="flex flex-col items-start mt-5 space-y-2">
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Translation</a>
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Proofreading & Editing</a>
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Content Creation</a>
+                            <a href="#" class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">News</a>
+                            <a href="#" class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Press Release</a>
+                            <a href="#" class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Magazines</a>
                         </div>
                     </div>
 
                     <div>
-                        <p class="font-semibold text-gray-800 dark:text-white">Contact Us</p>
+                        <p class="font-extrabold text-black dark:text-white">Contact Us</p>
 
                         <div class="flex flex-col items-start mt-5 space-y-2">
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">+251 768 473 4978</a>
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">info@moe.edu.et</a>
+                            <a href="#" class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">+251 768 473 4978</a>
+                            <a href="#" class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">info@moe.edu.et</a>
                             <div className="flex align-middle items-center justify-center"> 
                                 <a href="" className="flex items-center mt-4 lg:inline-block lg:mt-0 py-3 px-2 rounded ">
-                                    <SomeModule.FaFacebookF  className='dark:text-gray-300 dark:hover:text-blue-400 hover:animate-bounce_1s_ease-in-ease-out font-black h-2/3 text-[18px] rounded'/>
+                                    <SomeModule.FaFacebookF  className='text-white dark:text-gray-300 dark:hover:text-blue-400 hover:text-gray-300 hover:animate-bounce_1s_ease-in-ease-out h-2/3 text-[18px] rounded'/>
                                 </a>
                                 <a href="" className="flex items-center mt-4 lg:inline-block lg:mt-0 py-2 rounded  px-2">
-                                    <SomeModule.FaTwitter  className='dark:text-gray-300 dark:hover:text-blue-400 hover:animate-bounce_1s_ease-in-ease-out font-black h-2/3 text-[18px] rounded'/>
+                                    <SomeModule.FaTwitter  className='text-white dark:text-gray-300 dark:hover:text-blue-400 hover:text-gray-300 hover:animate-bounce_1s_ease-in-ease-out h-2/3 text-[18px] rounded'/>
                                 </a>
                                 <a href="" className="flex items-center mt-4 lg:inline-block lg:mt-0 py-2 rounded  px-2">
-                                    <SomeModule2.BsYoutube  className='dark:text-gray-300 dark:hover:text-blue-400 hover:animate-bounce_1s_ease-in-ease-out font-black h-2/3 text-[18px] rounded'/>
+                                    <SomeModule2.BsYoutube  className='text-white dark:text-gray-300 dark:hover:text-blue-400 hover:text-gray-300 hover:animate-bounce_1s_ease-in-ease-out h-2/3 text-[18px] rounded'/>
                                 </a>          
                             </div>
                         </div>
@@ -80,13 +80,13 @@ function Footer() {
                         <img src="https://moe.gov.et/logom.png"
                         className="h-16 max-w-full align-middle self-center"
                         alt="Moe Logo"/>
-                        <a className ="flex flex-col text-[#21618c] font-black font-serif pl-4">
+                        <a className ="flex flex-col text-white font-black font-serif pl-4">
                             <span id="text" className="flex">ትምህርት ሚኒስቴር</span> 
                             <span id="text" className="flex">Ministry Of Education</span> 
                         </a>
                     </div>
 
-                    <p class="mt-4 text-sm text-gray-500 sm:mt-0 dark:text-gray-300">© Copyright 2021. All Rights Reserved.</p>
+                    <p class="mt-4 text-sm text-gray-900 font-bold sm:mt-0 dark:text-gray-300">© Copyright 2021. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>
