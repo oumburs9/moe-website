@@ -5,6 +5,8 @@ import Mission from './views/about/mission-and-vision';
 import PoliciesAndStrategies from './views/Resources/policies-and-strategies'
 import Home from './views/home';
 import { ContactUs } from './views/contact-us/contact-us';
+import WhoIsWho from './views/about/who-is-who';
+import OrganizationalStructure from './views/about/organizational-structure';
 import GeneralEducation from './views/education-sectors/general-education/general-education';
 import HigherEducation from './views/education-sectors/higher-education/higher-education';
 
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
                 path:'/contact',
                 element:<ContactUs/>
             },   
+            {
+                path:'/about/who-is-who',
+                element:<WhoIsWho/>
+            },
+            {
+                path:"/about/moe's-organizational-structure",
+                element:<OrganizationalStructure/>
+            }
         //add other routes
         ],
     },  

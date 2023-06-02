@@ -5,6 +5,8 @@ import Save from './images/save.svg'
 import Mail from './images/mail.svg'
 import Prev from './images/prev.svg'
 import Next from './images/next.svg'
+import Students from './images/ethiopia-school-kids.jpg'
+import StudentswithTeacher from './images/studentswithteacher.jpeg'
 
 export default {
     Map,
@@ -14,4 +16,6 @@ export default {
     Save,
     Prev,
     Next,
+    Students,
+    StudentswithTeacher
 }
