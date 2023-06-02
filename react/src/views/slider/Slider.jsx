@@ -20,22 +20,31 @@ export const Slider = () => {
             setIndex(p=>(p+1)%(imgs.length))
             return  ()=>clearInterval(interval)
         }, 5000);
-    },[])
+    },[data])
 
     return (
         <AnimatePresence>
-            <div className="flex flex-col mt-5">
+            <div className="flex flex-col mt-5 relative w-full h-[500px]">
             <motion.div
-            
-             className="flex relative w-[100%] h-[500px] " style={{backgroundImage:`url(${data[index].image})`,backgroundSize:'cover'}}>
+             initial={{ x:-100}}
+             animate={{x:0,}}
+             transition={{
+                 duration:5,
+                 delay:1,
+                 ease:'easeIn',
+                 repeat:Infinity,
+                 repeatDelay:5,
+                 
+             }}
+             className="flex w-full h-full" style={{backgroundImage:`url(${data[index].image})`,backgroundSize:'cover'}}>
+                <Card title={"hello"}/> 
+            </motion.div>
                 <div className="absolute flex w-[80px] h-[60px] top-[70%] left-10 contact-icon px-4 py-2 rounded-lg items-center justify-center" onClick={()=>setIndex(p=> p > 0 ?(p-1)%imgs.length:imgs.length-1)}>
                     <img src={images.Prev} alt="" className="w-[50%] h-[50%]" />
                 </div>
                 <div className="absolute flex w-[80px] h-[60px] top-[70%] right-10 contact-icon px-4 py-2 rounded-lg items-center justify-center" onClick={()=>setIndex(p=>(p+1)%imgs.length)}>
                     <img src={images.Next} alt="" className="w-[50%] h-[50%]" />
                 </div>
-                <Card title={"hello"}/> 
-            </motion.div>
             <SlideButtons/>
         </div>
         </AnimatePresence>
