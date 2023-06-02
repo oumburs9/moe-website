@@ -37,7 +37,7 @@ const Dropdown = ( props) => {
 
       {isDropdownOpen && (
         <div 
-          className = "h-min overflow-hidden ">
+          className = "h-min overflow-hidden">
         <div
           id="dropdownNavbar"
           className= {`${
@@ -46,7 +46,7 @@ const Dropdown = ( props) => {
           
         >
           <ul
-            className="md:relative py-2 text-sm dark:text-gray-400 text-[#21618c] font-bold animate-wiggle bg-white " 
+            className="md:relative py-2 text-sm dark:text-gray-400 text-[#21618c] font-bold animate-wiggle bg-white shadow-sm" 
             aria-labelledby="dropdownLargeButton"
           >
             {items.map((item, index) => (
@@ -54,7 +54,7 @@ const Dropdown = ( props) => {
               <Link
                 onClick={handleDropdownOff}
                 to = {item.link}
-                className="w-full block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white "
+                className="w-full block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white shadow-md hover:shadow-none"
               >
                 {item.hasDropDown || item.name}
                {item.hasDropDown ?  <Dropdown isMenuOpen = {isMenuOpen}   name = {item.name} items = {[{name: "Who is who", hasDropDown: true,} ]} sideBar = {true}/> : <div> </div>}
@@ -149,8 +149,6 @@ const Navbar = () => {
           </svg>
         </button>
         <div
-          // className="hidden w-full md:block md:w-auto"
-          // id="navbar-dropdown"
           className={`${
             isMenuOpen ? 'block' : 'hidden'
           } w-full md:block md:w-min py-3.5`}
@@ -163,11 +161,10 @@ const Navbar = () => {
             <Dropdown isMenuOpen = {isMenuOpen} name = "Announcement" items = {announcementItems} sideBar = {false}/>
             <Dropdown isMenuOpen = {isMenuOpen} name = "Resources" items = {resourceItems} sideBar = {false}/>
             <Dropdown isMenuOpen = {isMenuOpen} name = "Media" items = {mediaItems} sideBar = {false}/>
-            {/* <Dropdown isMenuOpen = {isMenuOpen} name = "Langua" items = {aboutItems} sideBar = {false}/> */}
 
             <li>
             <Link to={'/contact'}>
-              <button className="flex p-4 ml-5 text-gray-900 rounded md:w-max align-middle text-center md:shadow-[#8bbfe2] md:shadow-lg md:py-3 md:px-8 text-white md:bg-[#21618c]">
+              <button className="flex p-4 ml-5 rounded md:w-max align-middle text-center md:shadow-[#8bbfe2] md:shadow-lg md:py-3 md:px-8 text-white md:bg-[#21618c]">
                 <span className=" flex items-center justify-between ml-1 font-white ">< BsFillEnvelopeFill/><span className="px-2"> Contact</span></span> 
               </button>
             </Link>
