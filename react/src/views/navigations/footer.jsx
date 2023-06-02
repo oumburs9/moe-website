@@ -49,6 +49,7 @@ function Footer() {
                             <a href="#" class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">News</a>
                             <a href="#" class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Press Release</a>
                             <a href="#" class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Magazines</a>
+                            <a href="#" class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Gallery</a>
                         </div>
                     </div>
 
@@ -76,16 +77,15 @@ function Footer() {
                 <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700"/>
                 
                 <div class="flex flex-col items-center justify-between sm:flex-row">
-                    <div className='flex items-center'>
+                    <a href="#" className='flex items-center'>
                         <img src="https://moe.gov.et/logom.png"
                         className="h-16 max-w-full align-middle self-center"
                         alt="Moe Logo"/>
-                        <a className ="flex flex-col text-white font-black font-serif pl-4">
+                        <div className ="flex flex-col text-white font-black font-serif pl-4">
                             <span id="text" className="flex">ትምህርት ሚኒስቴር</span> 
-                            <span id="text" className="flex">Ministry Of Education</span> 
-                        </a>
-                    </div>
-
+                            <span id="text" className="flex">Ministry Of Education</span>
+                        </div> 
+                    </a>
                     <p class="mt-4 text-sm text-gray-900 font-bold sm:mt-0 dark:text-gray-300">© Copyright 2021. All Rights Reserved.</p>
                 </div>
             </div>

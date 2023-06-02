@@ -88,14 +88,6 @@ const Navbar = () => {
   const educationSectorItems = [
     {name: "Higher Education", link: "/educations/higher-education", hasDropDown: false},
     {name: "General Education", link: "/educations/general-education", hasDropDown : false}];
-
-  // const higherEducationItems = [
-  //   {name: "Higher Education", link: "/resources/policies-and-strategies", hasDropDown: false},
-  //   {name: "General Education", link: "google.com", hasDropDown : false}];
-
-  // const generalEducationItems = [
-  //   {name: "Chief Executive Offices", link: "/resources/policies-and-strategies", hasDropDown: false},
-  //   {name: "Executive Offices", link: "google.com", hasDropDown : false}];
   
   const announcementItems = [
     {name: "Job Vacancies", link: "/resources/policies-and-strategies", hasDropDown: false, },
@@ -121,7 +113,7 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <nav className="bg-white  w-full m-0 shadow-md">
+    <nav className="bg-white  w-full m-0 shadow-md z-10 sticky top-0">
       <div className=" w-full max-w-screen-xl flex flex-wrap justify-between h-min mx-auto py-3.5 px-16">
         <Link to='/' className="flex items-center justify-center text-justify h-full py-2">
           <img
