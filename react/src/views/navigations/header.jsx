@@ -86,16 +86,16 @@ const Navbar = () => {
     {name: "Agencies", link: "google.com", hasDropDown: false}];
   
   const educationSectorItems = [
-    {name: "Higher Education", link: "/resources/policies-and-strategies", hasDropDown: true},
-    {name: "General Education", link: "google.com", hasDropDown : true}];
+    {name: "Higher Education", link: "/educations/higher-education", hasDropDown: false},
+    {name: "General Education", link: "/educations/general-education", hasDropDown : false}];
 
-  const higherEducationItems = [
-    {name: "Higher Education", link: "/resources/policies-and-strategies", hasDropDown: false},
-    {name: "General Education", link: "google.com", hasDropDown : false}];
+  // const higherEducationItems = [
+  //   {name: "Higher Education", link: "/resources/policies-and-strategies", hasDropDown: false},
+  //   {name: "General Education", link: "google.com", hasDropDown : false}];
 
-  const generalEducationItems = [
-    {name: "Chief Executive Offices", link: "/resources/policies-and-strategies", hasDropDown: false},
-    {name: "Executive Offices", link: "google.com", hasDropDown : false}];
+  // const generalEducationItems = [
+  //   {name: "Chief Executive Offices", link: "/resources/policies-and-strategies", hasDropDown: false},
+  //   {name: "Executive Offices", link: "google.com", hasDropDown : false}];
   
   const announcementItems = [
     {name: "Job Vacancies", link: "/resources/policies-and-strategies", hasDropDown: false, },

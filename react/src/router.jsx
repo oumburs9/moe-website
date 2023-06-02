@@ -7,9 +7,8 @@ import Home from './views/home';
 import { ContactUs } from './views/contact-us/contact-us';
 import WhoIsWho from './views/about/who-is-who';
 import OrganizationalStructure from './views/about/organizational-structure';
-// import Header from './views/navigations/header';
-// import Test from './views/navigations/test';
-// import Home from './views/home';
+import GeneralEducation from './views/education-sectors/general-education/general-education';
+import HigherEducation from './views/education-sectors/higher-education/higher-education';
 
 const router = createBrowserRouter([
     {
@@ -30,9 +29,17 @@ const router = createBrowserRouter([
                 element: <PoliciesAndStrategies/>
             },
             {
+                path: '/educations/higher-education',
+                element: <HigherEducation/>
+            },
+            {
+                path: '/educations/general-education',
+                element: <GeneralEducation/>
+            },
+            {
                 path:'/contact',
                 element:<ContactUs/>
-            },
+            },   
             {
                 path:'/about/who-is-who',
                 element:<WhoIsWho/>
@@ -44,6 +51,7 @@ const router = createBrowserRouter([
         //add other routes
         ],
     },  
+  
      
 ]);
 
