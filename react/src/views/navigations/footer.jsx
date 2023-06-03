@@ -3,7 +3,7 @@ import * as SomeModule2 from 'react-icons/bs';
 
 function Footer() {
     return (
-        <footer class="bg-[#156584] dark:bg-gray-900 mt-10">
+        <footer class="bg-[#156584] dark:bg-gray-900 mt-32">
             <div class="container px-6 py-12 mx-auto">
                 <div class="md:flex md:-mx-3 md:items-center md:justify-between">
                     <h1 class="text-xl font-extrabold tracking-tight text-black md:mx-3 xl:text-2xl dark:text-white">Subscribe our newsletter to get update.</h1>

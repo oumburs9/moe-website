@@ -173,19 +173,27 @@ const GeneralEducation = () => {
       const data = translationsGeneralEducations[selectedLanguage];
     
       return (
-        <div>
- <div  className='flex pl-14 py-10  bg-[#21618c] text-2xl font-bold text-white'>General Education Development Program Sector</div>
+        <><nav>
+          <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
+            <li className='flex gap-2'>
+              <a href="#">Home</a>
+              <span>{">"}</span>
+            </li>
+            <li>General-Education</li>
+          </ol>
+        </nav><div>
+            <div className='flex pl-14 py-10  bg-[#21618c] text-2xl font-bold text-white'>General Education Development Program Sector</div>
 
-          <div className='flex flex-row content-left justify-evenly mt-4'>
-            <button className='text-xs font-mono mb-2' onClick={() => handleLanguageChange('english')}>
-              English
-            </button>
-            <button className='text-xs font-mono mb-2' onClick={() => handleLanguageChange('amharic')}>
-              Amharic
-            </button>
-          </div>
-          <Card data={data} />
-        </div>
+            <div className='flex flex-row content-left justify-evenly mt-4'>
+              <button className='text-xs font-mono mb-2' onClick={() => handleLanguageChange('english')}>
+                English
+              </button>
+              <button className='text-xs font-mono mb-2' onClick={() => handleLanguageChange('amharic')}>
+                Amharic
+              </button>
+            </div>
+            <Card data={data} />
+          </div></>
       );
 }
 

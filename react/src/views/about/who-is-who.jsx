@@ -92,9 +92,9 @@ const data = [
 
     {
         id:7,
-        name: 'Mr.Tesfaye Negawo',
-        image: images.Tesfaye,
-        position: "Head of Curriculum Development",
+        name: 'H.E Pr.Brihanu Nega',
+        image: 'https://moe.gov.et/storage/minimsg/%E1%8C%B0%E1%8C%B0%E1%8C%B02014_1634039719.jpg',
+        position: "Head Of Curriculum Development",
         story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
         , youtubeLink: "youtube.com",
         facebookLink: "facebook.com",
@@ -167,7 +167,7 @@ const data = [
         id:13,
         name: 'Mr.Beyene Tezera',
         image: images.Beyene,
-        position: "Teachers and Students Development Head ",
+        position: "Teachers and Students Development Head",
         story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
         , youtubeLink: "youtube.com",
         facebookLink: "facebook.com",
@@ -214,7 +214,7 @@ const data = [
     },
     {
         id:17,
-        name: 'Mr. Teshome Daniel',
+        name: 'Mr.Teshome Daniel',
         image: images.Teshome,
         position: "Institutional Linkage and Technology Transfer Desk Head",
         story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
@@ -226,7 +226,7 @@ const data = [
     },
     {
         id:18,
-        name: 'Mrs. Selam Alemu',
+        name: 'Mrs.Selam Alemu',
         image: images.Selam,
         position: "Community Engagement and Indigenous Knowledge Desk Head",
         story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
@@ -251,9 +251,9 @@ const data = [
     },
     {
         id:20,
-        name: 'Mrs.Selam Alemu',
-        image: images.Eyob,
-        position: "Community Engagement and Indigenous Knowledge Desk Head",
+        name: 'H.E Pr.Brihanu Nega',
+        image: 'https://moe.gov.et/storage/minimsg/%E1%8C%B0%E1%8C%B0%E1%8C%B02014_1634039719.jpg',
+        position: "Institutional Structure and Leadership Desk Head",
         story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
         , youtubeLink: "youtube.com",
         facebookLink: "facebook.com",
@@ -302,7 +302,7 @@ const data = [
         id:24,
         name: 'Solomon Wondimu',
         image: images.Solomon3,
-        position: "Head of  Scool Net and ICT desk",
+        position: "Head of  School Net and ICT desk",
         story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
         , youtubeLink: "youtube.com",
         facebookLink: "facebook.com",
@@ -312,9 +312,9 @@ const data = [
     },
     {
         id:25,
-        name: 'Mr.Zewdu Kassa',
-        image: images.Zewdu,
-        position: "Infrastructure and Supply Desk Head",
+        name: 'H.E Pr.Brihanu Nega',
+        image: 'https://moe.gov.et/storage/minimsg/%E1%8C%B0%E1%8C%B0%E1%8C%B02014_1634039719.jpg',
+        position: "Education Media Studio Operation and Adminstration Desk Head",
         story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
         , youtubeLink: "youtube.com",
         facebookLink: "facebook.com",
@@ -324,9 +324,9 @@ const data = [
     },
     {
         id:26,
-        name: 'Idossa Terfassa ( PhD)',
-        image: images.Idossa,
-        position: "Scholarship and Internalization Desk Head",
+        name: 'H.E Pr.Brihanu Nega',
+        image: 'https://moe.gov.et/storage/minimsg/%E1%8C%B0%E1%8C%B0%E1%8C%B02014_1634039719.jpg',
+        position: "Network Technical Desk Head",
         story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
         , youtubeLink: "youtube.com",
         facebookLink: "facebook.com",
@@ -334,6 +334,302 @@ const data = [
         peoplesUnder: [],
         peoplesUnderPosition:''
     },
+    {
+        id:27,
+        name: 'H.E Pr.Brihanu Nega',
+        image: 'https://moe.gov.et/storage/minimsg/%E1%8C%B0%E1%8C%B0%E1%8C%B02014_1634039719.jpg',
+        position: "Network Operation Desk Head",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+
+    {
+        id:28,
+        name: 'Mrs.Aster Berhe',
+        image: images.Aster,
+        position: "Language and Co- curricular Education curriculm Desk Head",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    {
+        id:29,
+        name: 'Mr.Oumer Eimam',
+        image: images.Oumer,
+        position: "Social science Education curriculm Desk Head",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    {
+        id:30,
+        name: 'Mrs. Zafu Abrha',
+        image: images.Zafu,
+        position: "Natural science  Education curriculm Desk Head",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    {
+        id:31,
+        name: 'Mr.Matebie Alemayehu',
+        image: images.Matebie,
+        position: "Career and Techincal Education Curriculm Desk Head",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+
+    {
+        id:32,
+        name: 'Mrs.Aseged Meressa',
+        image: images.Aseged,
+        position: "Teachers and School Leaders Development Desk Head",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    {
+        id:33,
+        name: 'Mrs.Haregua Mamo',
+        image: images.Haregua,
+        position: "Education language Development Desk Head",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    {
+        id:34,
+        name: 'Mr.Tadesse Teressa',
+        image: images.Tadesse,
+        position: "STEAM Desk Head",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+
+    {
+        id:35,
+        name: 'Taye Girma',
+        image: images.Taye,
+        position: "Head of Education Program and Quality Improvement Desk",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    {
+        id:36,
+        name: 'Mrs.Meseret Bekele',
+        image: images.Meseret,
+        position: "Pastoralist and Special Needs Education Desk Head",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    {
+        id:37,
+        name: 'Mr.Dawit Azene',
+        image: images.Dawit,
+        position: "Educational infrastructure &service desk Head",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    {
+        id:38,
+        name: 'Mr.Asfaw Mekonnen',
+        image: images.Asfaw,
+        position: "General Education Inspection Desk Head",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+
+    {
+        id:39,
+        name: 'Mrs.Bekelech Tesfaye',
+        image: images.Bekelech,
+        position: "Adult Basic Education Programme Desk Head",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    {
+        id:40,
+        name: 'Mr.Zelalem Alagaw',
+        image: images.Zelalem,
+        position: "Non formal and lifelong Educational Programs Desk Head",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+
+    {
+        id:41,
+        name: 'Yibeltal Ayalew (PhD)',
+        image: images.Yibeltal,
+        position: "CEO, Corporate Managment",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    {
+        id:42,
+        name: 'Mr.Addisu Tesfaye',
+        image: images.Addisu,
+        position: "Executive of Procurement Office",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    {
+        id:43,
+        name: 'Mr.Samuel Asmamaw',
+        image: images.Samuel,
+        position: "Human Resource, competence and  Managment Executive Officer",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    {
+        id:44,
+        name: 'Mr.Eyob Tamiru',
+        image: images.Eyob2,
+        position: "Head of Finance Executive",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    {
+        id:45,
+        name: 'Mr.Sebsib Lemma',
+        image: images.Sebsib,
+        position: "Education Information Managment System and ICT Executive",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+
+    {
+        id:46,
+        name: 'Mr. Mezgebu Biazen',
+        image: images.Mezgebu,
+        position: "Executive for Strategic Affairs",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    {
+        id:47,
+        name: 'Mrs.Amelework Hizkeal',
+        image: images.Amelework,
+        position: "Public realtion and Communication Executive",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    {
+        id:48,
+        name: 'Mrs.Netsanet Kassahun',
+        image: images.Netsanet,
+        position: "Ethics Monitoring Office",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    {
+        id:49,
+        name: 'Mrs.Desta Gurmu',
+        image: images.Desta,
+        position: "Audit Excutive Officer",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    }, 
+
+    {
+        id:50,
+        name: 'Mr.Solomon Abate',
+        image: images.Solomon,
+        position: "Head of Transport and Delivery  Service",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [],
+        peoplesUnderPosition:''
+    },
+    
     
 ]
 
@@ -353,6 +649,7 @@ export const PeopleUnder = ({data,action}) => {
             <p href="" className='text-[#156584] hover:cursor-pointer' onClick={action}><strong>See more...</strong></p>
         </div>
     )
+
 }
 
 export const PeoplesUnder = () =>{
@@ -375,6 +672,15 @@ function WhoIsWho() {
 
     return (
         <>
+            <nav>
+                <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
+                <li className='flex gap-2'>
+                    <a href="#">Home</a>
+                    <span>{">"}</span>
+                </li>
+                <li>Who-is-Who</li>
+                </ol>
+            </nav>
             <h1 className="text-[50px] text-[#156584] my-5 ml-10">Who is Who at MOE</h1>
             <div className="mx-20">
                 <h2 className='text-[30px] mb-5'><span className='border-b-2 border-[#156584]'>{data[profileData].position}</span></h2>

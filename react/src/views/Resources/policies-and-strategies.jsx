@@ -1,8 +1,16 @@
 function PoliciesAndStrategies() {
     return (
         <>
-
-<div class="container px-4 mx-auto">
+        <nav>
+            <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
+            <li className='flex gap-2'>
+                <a href="#">Home</a>
+                <span>{">"}</span>
+            </li>
+            <li>Policies-and-Strategies</li>
+            </ol>
+        </nav>
+        <div class="container px-4 mx-auto">
             <div class="sm:flex sm:items-center sm:justify-between">
                 <h2 class="text-lg font-medium text-gray-800 dark:text-white">Files uploaded</h2>
         

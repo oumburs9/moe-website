@@ -17,58 +17,57 @@ const Dropdown = ( props) => {
   };
 
   return (
-    <li
-    onMouseLeave={handleDropdownOff}
+    <><li
+      onMouseLeave={handleDropdownOff}
     >
 
-      {sideBar ? <a href="#"  className="border-b-2 w-full flex py-2 text-[#156584]"
-      
-      id="dropdownNavbarLink"
+      {sideBar ? <a href="#" className="border-b-2 w-full flex py-2 text-[#156584]"
+
+        id="dropdownNavbarLink"
         data-dropdown-toggle="dropdownNavbar"
         onMouseEnter={handleDropdownOn}
-      > <span className=""> {name} </span> </a> :<button
+      > <span className=""> {name} </span> </a> : <button
         id="dropdownNavbarLink"
         data-dropdown-toggle="dropdownNavbar"
         className="flex items-center font-Helvetica text-[13px] font-medium uppercase justify-between w-full py-1.5 pl-3 pr-4 rounded text-[#156584] whitespace-nowrap"
         onMouseEnter={handleDropdownOn}
       >
         {name}
-      </button> }
+      </button>}
 
       {isDropdownOpen && (
-        <div 
-          className = "h-min overflow-hidden">
         <div
-          id="dropdownNavbar"
-          className= {`${
-            sideBar ? 'md:w-full md:absolute md:left-[105%] md:top-0 md:z-10' : 'md:absolute md:z-10'
-          } max-md:w-full  font-normal text-[#21618c] bg-transparent divide-y divide-red-700 text-left dark:bg-gray-700 dark:divide-gray-600`}
-          
-        >
-          <ul
-            className="md:relative py-2 text-sm dark:text-gray-400 text-[#21618c] font-bold animate-wiggle bg-white shadow-sm" 
-            aria-labelledby="dropdownLargeButton"
-          >
-            {items.map((item, index) => (
-            <li key = {index}> 
-              <Link
-                onClick={handleDropdownOff}
-                to = {item.link}
-                className="w-full block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white shadow-md hover:shadow-none"
-              >
-                {item.hasDropDown || item.name}
-               {item.hasDropDown ?  <Dropdown isMenuOpen = {isMenuOpen}   name = {item.name} items = {[{name: "Who is who", hasDropDown: true,} ]} sideBar = {true}/> : <div> </div>}
-              </Link>
-            </li>
+          className="h-min overflow-hidden">
+          <div
+            id="dropdownNavbar"
+            className={`${sideBar ? 'md:w-full md:absolute md:left-[105%] md:top-0 md:z-10' : 'md:absolute md:z-10'} max-md:w-full  font-normal text-[#21618c] bg-transparent divide-y divide-red-700 text-left dark:bg-gray-700 dark:divide-gray-600`}
 
-            ))}
-            
-          </ul>
-          
-        </div>
+          >
+            <ul
+              className="md:relative py-2 text-sm dark:text-gray-400 text-[#21618c] font-bold animate-wiggle bg-white shadow-sm"
+              aria-labelledby="dropdownLargeButton"
+            >
+              {items.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    onClick={handleDropdownOff}
+                    to={item.link}
+                    className="w-full block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white shadow-md hover:shadow-none"
+                  >
+                    {item.hasDropDown || item.name}
+                    {item.hasDropDown ? <Dropdown isMenuOpen={isMenuOpen} name={item.name} items={[{ name: "Who is who", hasDropDown: true, }]} sideBar={true} /> : <div> </div>}
+                  </Link>
+                </li>
+
+              ))}
+
+            </ul>
+
+          </div>
         </div>
       )}
     </li>
+    </>
   );
 };
 
@@ -113,18 +112,17 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <nav className="bg-white  w-full m-0 shadow-md z-10 sticky top-0">
+    <><nav className="bg-white w-full m-0 shadow-md z-10 sticky top-0">
       <div className=" w-full max-w-screen-xl flex flex-wrap justify-between h-min mx-auto py-3.5 px-16">
         <Link to='/' className="flex items-center justify-center text-justify h-full py-2">
           <img
             src="https://moe.gov.et/logom.png"
             className="h-16 max-w-full align-middle self-center"
-            alt="Moe Logo"
-          />
-          <a className ="flex flex-col text-[#21618c] font-black font-serif pl-4">
-						<span id="text" className="flex">ትምህርት ሚኒስቴር</span> 
-						<span id="text" className="flex">Ministry Of Education</span> 
-					</a>
+            alt="Moe Logo" />
+          <a className="flex flex-col text-[#21618c] font-black font-serif pl-4">
+            <span id="text" className="flex">ትምህርት ሚኒስቴር</span>
+            <span id="text" className="flex">Ministry Of Education</span>
+          </a>
         </Link>
         <button
           onClick={toggleMenu}
@@ -149,32 +147,31 @@ const Navbar = () => {
           </svg>
         </button>
         <div
-          className={`${
-            isMenuOpen ? 'block' : 'hidden'
-          } w-full md:block md:w-min py-3.5`}
+          className={`${isMenuOpen ? 'block' : 'hidden'} w-full md:block md:w-min py-3.5`}
           id="navbar-dropdown"
         >
           <div className="flex self-center">
-          <ul className="flex flex-col items-center justify-center text-end h-full font-medium border border-red-500 rounded-lg bg-gray-50 md:flex-row  md:border-0 md:bg-white md:w-min  dark:border-gray-700">
-            <Dropdown isMenuOpen = {isMenuOpen}   name = "About" items = {aboutItems} sideBar = {false} />
-            <Dropdown isMenuOpen = {isMenuOpen}  name = "Education sector" items = {educationSectorItems} sideBar = {false}/>
-            <Dropdown isMenuOpen = {isMenuOpen} name = "Announcement" items = {announcementItems} sideBar = {false}/>
-            <Dropdown isMenuOpen = {isMenuOpen} name = "Resources" items = {resourceItems} sideBar = {false}/>
-            <Dropdown isMenuOpen = {isMenuOpen} name = "Media" items = {mediaItems} sideBar = {false}/>
+            <ul className="flex flex-col items-center justify-center text-end h-full font-medium border border-red-500 rounded-lg bg-gray-50 md:flex-row  md:border-0 md:bg-white md:w-min  dark:border-gray-700">
+              <Dropdown isMenuOpen={isMenuOpen} name="About" items={aboutItems} sideBar={false} />
+              <Dropdown isMenuOpen={isMenuOpen} name="Education sector" items={educationSectorItems} sideBar={false} />
+              <Dropdown isMenuOpen={isMenuOpen} name="Announcement" items={announcementItems} sideBar={false} />
+              <Dropdown isMenuOpen={isMenuOpen} name="Resources" items={resourceItems} sideBar={false} />
+              <Dropdown isMenuOpen={isMenuOpen} name="Media" items={mediaItems} sideBar={false} />
 
-            <li>
-            <Link to={'/contact'}>
-              <button className="flex p-4 ml-5 rounded md:w-max align-middle text-center md:shadow-[#8bbfe2] md:shadow-lg md:py-3 md:px-8 text-white md:bg-[#21618c]">
-                <span className=" flex items-center justify-between ml-1 font-white ">< BsFillEnvelopeFill/><span className="px-2"> Contact</span></span> 
-              </button>
-            </Link>
-            
-            </li>
-          </ul>
+              <li>
+                <Link to={'/contact'}>
+                  <button className="flex p-4 ml-5 rounded md:w-max align-middle text-center md:shadow-[#8bbfe2] md:shadow-lg md:py-3 md:px-8 text-white md:bg-[#21618c]">
+                    <span className=" flex items-center justify-between ml-1 font-white "><BsFillEnvelopeFill /><span className="px-2"> Contact</span></span>
+                  </button>
+                </Link>
+
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </nav>
+    </>
   );
 };
 

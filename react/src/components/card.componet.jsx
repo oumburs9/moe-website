@@ -18,7 +18,7 @@ const Card = ({data}) => {
         return (
           <div
             key={index}
-            className="bg-white shadow-2xl rounded-xl m-6 p-6"
+            className="bg-white shadow-2xl hover:shadow-lg rounded-xl m-6 p-6"
           >
             <h1 className="text-2xl font-bold mb-2 text-[#21618c]">{cardData.title}</h1>
             <h2 className="text-lg font-medium mb-4 text-[#21618c] ">{cardData.leader}</h2>
