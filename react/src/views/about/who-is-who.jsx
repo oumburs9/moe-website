@@ -12,8 +12,8 @@ const data = [
         , youtubeLink: "youtube.com",
         facebookLink: "facebook.com",
         twitterLink: "twitter.com",
-        peoplesUnder: [1, 2],
-        peoplesUnderPosition:'State Ministers'
+        peoplesUnder: [1, 2, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+        peoplesUnderPosition:'State Ministers, Minister Offices and Corporate Management'
     },
 
     {
@@ -74,7 +74,7 @@ const data = [
         , youtubeLink: "youtube.com",
         facebookLink: "facebook.com",
         twitterLink: "twitter.com",
-        peoplesUnder: [],
+        peoplesUnder: [19, 20, 21, 22],
         peoplesUnderPosition:'Desks'
     },
     {
@@ -86,7 +86,7 @@ const data = [
         , youtubeLink: "youtube.com",
         facebookLink: "facebook.com",
         twitterLink: "twitter.com",
-        peoplesUnder: [],
+        peoplesUnder: [23, 24, 25, 26, 27],
         peoplesUnderPosition:'Desks'
     },
 
@@ -99,7 +99,7 @@ const data = [
         , youtubeLink: "youtube.com",
         facebookLink: "facebook.com",
         twitterLink: "twitter.com",
-        peoplesUnder: [],
+        peoplesUnder: [28, 29, 30, 31],
         peoplesUnderPosition:'Desks'
     },
     {
@@ -111,7 +111,7 @@ const data = [
         , youtubeLink: "youtube.com",
         facebookLink: "facebook.com",
         twitterLink: "twitter.com",
-        peoplesUnder: [],
+        peoplesUnder: [32, 33, 34],
         peoplesUnderPosition:'Desks'
     },
     {
@@ -123,7 +123,7 @@ const data = [
         , youtubeLink: "youtube.com",
         facebookLink: "facebook.com",
         twitterLink: "twitter.com",
-        peoplesUnder: [],
+        peoplesUnder: [35, 36, 37, 38],
         peoplesUnderPosition:'Desks'
     },
     {
@@ -135,7 +135,7 @@ const data = [
         , youtubeLink: "youtube.com",
         facebookLink: "facebook.com",
         twitterLink: "twitter.com",
-        peoplesUnder: [],
+        peoplesUnder: [39, 40],
         peoplesUnderPosition:'Desks'
     },
 
@@ -584,7 +584,7 @@ const data = [
         id:47,
         name: 'Mrs.Amelework Hizkeal',
         image: images.Amelework,
-        position: "Public realtion and Communication Executive",
+        position: "Public relation and Communication Executive",
         story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
         , youtubeLink: "youtube.com",
         facebookLink: "facebook.com",
@@ -638,9 +638,9 @@ export const PeopleUnder = ({data,action}) => {
     const {name,image,position} = data
 
     return (
-        <div className="text-center">
+        <div className="text-center mb-5">
             <div className="rounded-md overflow-hidden mr-10">
-                <img src={image} alt={name} />
+                <img className='h-[300px] w-full object-cover' src={image} alt={name} />
             </div>
             <div className="text-center text-gray-700">
                 <span><strong>{name}</strong></span><br />
@@ -652,20 +652,6 @@ export const PeopleUnder = ({data,action}) => {
 
 }
 
-export const PeoplesUnder = () =>{
-    const [profileData, setProfileData] = useState(0)
-    return (
-        <>
-        {data[profileData].peoplesUnder.map((index) => {
-            <PeopleUnder data={data[data[profileData].peoplesUnder[index]]} action={()=>setProfileData(data[data[profileData].peoplesUnder[index]].id)}/>
-            console.log(data[data[profileData].peoplesUnder[index]])
-        }
-        )
-        }
-        </>
-    )
-}
-
 function WhoIsWho() {
 
     const [profileData, setProfileData] = useState(0)
@@ -674,37 +660,57 @@ function WhoIsWho() {
         <>
             <nav>
                 <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
-                <li className='flex gap-2'>
-                    <a href="#">Home</a>
-                    <span>{">"}</span>
-                </li>
-                <li>Who-is-Who</li>
+                    <li className='flex gap-2'>
+                        <a href="#">Home</a>
+                        <span>{">"}</span>
+                    </li>
+                    <li className='flex gap-2'>
+                        <p>Who-is-Who</p>
+                        <span>{">"}</span>
+                    </li>
+                    <li className=''>
+                        <p>{data[profileData].name}</p>
+                    </li>
                 </ol>
             </nav>
             <h1 className="text-[50px] text-[#156584] my-5 ml-10">Who is Who at MOE</h1>
             <div className="mx-20">
                 <h2 className='text-[30px] mb-5'><span className='border-b-2 border-[#156584]'>{data[profileData].position}</span></h2>
                 <div className="grid grid-cols-5">
-                    <div className='flex gap-10 col-span-3 items-center'>
-                        <div className='w-[300px] h-[300px] rounded-full overflow-hidden border border-gray-700'>
-                            <img src={data[profileData].image} alt="" />
+                    <div className='col-span-3'>
+                        <div className='flex gap-10 items-center'>
+                            <div className='w-[300px] h-[300px] min-w-fit rounded-full overflow-hidden'>
+                                <img src={data[profileData].image} className='h-[300px] w-[300px] object-cover' alt="avator" />
+                            </div>
+                            <div className='text-gray-700 pr-4'>
+                                <h2 className='text-lg font-bold'>{data[profileData].name}</h2>
+                                <span className='text-base font-light'>{data[profileData].position}</span>
+                            </div>
                         </div>
-                        <div className='text-gray-700'>
-                            <h2 className='text-lg font-bold'>{data[profileData].name}</h2>
-                            <span className='text-base font-light'>{data[profileData].position}</span>
+                        <p className='mt-10'>
+                            {data[profileData].story}
+                        </p>
+                    </div>
+                    <div className='col-span-2 border-l border-gray-300'>
+                        <div className='px-5'>
+                            <h2 className='mb-3'>Qiuck Access</h2>
+                            <ul className='h-96 overflow-y-scroll'>
+                                {data.map((person) => (
+                                    <li className='mb-3 cursor-pointer' onClick={()=>setProfileData(person.id)}>
+                                        <div className='flex items-center gap-3'>
+                                            <div className='w-[50px] h-[50px] overflow-hidden'>
+                                                <img src={person.image} className='w-[50px] h-[50px] object-cover' alt='avator' />
+                                            </div>
+                                            <div className='text-gray-700'>
+                                                <h2 className='text-md font-semibold'>{person.name}</h2>
+                                                <span className='text-sm font-extralight'>{person.position}</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
-                    <div className='border-l border-gray-300 ml-10'>
-                        <ul className='ml-5 whitespace-nowrap'>
-                            <li><a href="">Higher Education Minister</a></li>
-                            <li><a href="">General Education Minister</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div className='grid grid-cols-5 mt-10'>
-                    <p className='col-span-3'>
-                        {data[profileData].story}
-                    </p>
                 </div>
                 <div className="flex items-center gap-5 my-10">
                     <a href={data[profileData].facebookLink} className="px-12 py-[6px] bg-[#156584] rounded-sm">
@@ -719,10 +725,9 @@ function WhoIsWho() {
                 </div>
                 <h2 className='text-[30px] mb-5'><span className='border-b-2 border-[#156584]'>{data[profileData].peoplesUnderPosition}</span></h2>
                 <div className='grid md:grid-cols-3'>
-                    <PeopleUnder data={data[data[profileData].peoplesUnder[0]]} action={()=>setProfileData(data[data[profileData].peoplesUnder[0]].id)}/>
-                    <PeopleUnder data={data[data[profileData].peoplesUnder[1]]} action={()=>setProfileData(data[data[profileData].peoplesUnder[1]].id)}/>
-                    {/* <PeopleUnder data={data[data[profileData].peoplesUnder[2]]} action={()=>setProfileData(data[data[profileData].peoplesUnder[2]].id)}/>
-                    <PeopleUnder data={data[data[profileData].peoplesUnder[3]]} action={()=>setProfileData(data[data[profileData].peoplesUnder[3]].id)}/> */}
+                    {data[profileData].peoplesUnder.map((person,index) => (
+                        <PeopleUnder data={data[data[profileData].peoplesUnder[index]]} action={()=>setProfileData(data[data[profileData].peoplesUnder[index]].id)}/>
+                    ))}
                 </div>
             </div>
         </>
