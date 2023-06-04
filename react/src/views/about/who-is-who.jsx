@@ -698,7 +698,7 @@ function WhoIsWho() {
                                 {data.map((person) => (
                                     <li className='mb-3 cursor-pointer' onClick={()=>setProfileData(person.id)}>
                                         <div className='flex items-center gap-3'>
-                                            <div className='w-[50px] h-[50px] overflow-hidden'>
+                                            <div className='w-[50px] h-[50px] rounded-sm min-w-fit overflow-hidden'>
                                                 <img src={person.image} className='w-[50px] h-[50px] object-cover' alt='avator' />
                                             </div>
                                             <div className='text-gray-700'>
