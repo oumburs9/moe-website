@@ -1,10 +1,8 @@
-import { Outlet } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileText } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
-import lipImage from '../images/initiative.png';
 import { Slider } from './slider/Slider';
 
 const Home = () => {
@@ -46,7 +44,6 @@ const Home = () => {
       date: ' Mar 06, 2023',
       category:'Higher Education',
     },
-    // Add more image data objects here as needed
   ];
 
     const directorates = [

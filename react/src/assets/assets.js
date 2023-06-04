@@ -8,6 +8,9 @@ import Next from './images/next.svg'
 import Students from './images/ethiopia-school-kids.jpg'
 import StudentswithTeacher from './images/studentswithteacher.jpeg'
 
+import Structure1 from './images/structure.jpg'
+import Structure2 from './images/structure2.jpg'
+
 import Abule from './whoiswho/Abule.jpg'
 import Ataklti from './whoiswho/Ataklti.jpg'
 import EbaMijena from './whoiswho/EbaMijena.jpg'
@@ -67,6 +70,9 @@ export default {
     Next,
     Students,
     StudentswithTeacher,
+
+    Structure1,
+    Structure2,
 
     Abule,
     Ataklti,

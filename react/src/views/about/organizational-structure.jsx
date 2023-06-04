@@ -1,5 +1,4 @@
-import img1 from '../../images/structure.jpg'
-import img2 from '../../images/structure2.jpg'
+import {images} from '../../assets/index'
 
 function OrganizationalStructure() {
     return(
@@ -14,8 +13,8 @@ function OrganizationalStructure() {
             </ol>
         </nav>
         <div className="">
-            <img src={img1} alt="" />
-            <img src={img2} alt="" />
+            <img src={images.Structure1} alt="higher structure" />
+            <img src={images.Structure2} alt="lower structure" />
         </div>
         </>
     )
