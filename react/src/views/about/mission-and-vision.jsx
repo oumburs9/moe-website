@@ -34,8 +34,8 @@ function Mission(){
                 communications and public awareness.
               </p>
               <p className="mt-[2em]">
-                <h4 className="text-center text-lg mb-5"><strong>Our Values</strong></h4>
-                <div className="ml-4 flex justify-around">
+                <h4 className="text-lg"><strong>Our Values</strong></h4>
+                <div className="ml-4 grid grid-cols-3 gap-10">
                   <ul className="list-disc">
                     <li>Effectiveness and Efficiency</li>
                     <li>Quality</li>
