@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const data = [
@@ -46,7 +46,12 @@ const articles = [
     },
   ];
 
-function Side(){
+  const Side = () => {
+    useEffect(() => {
+      const script = document.createElement("script");
+      script.src="https://platform.twitter.com/widgets.js";
+      document.getElementsByClassName("twitter-embed")[0].appendChild(script);
+    }, []);
 
     const [profileData] = useState(0)
 

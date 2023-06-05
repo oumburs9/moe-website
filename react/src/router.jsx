@@ -9,6 +9,7 @@ import WhoIsWho from './views/about/who-is-who';
 import OrganizationalStructure from './views/about/organizational-structure';
 import GeneralEducation from './views/education-sectors/general-education/general-education';
 import HigherEducation from './views/education-sectors/higher-education/higher-education';
+import FactSheet from './views/about/fact-sheet';
 
 const router = createBrowserRouter([
     {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
             {
                 path:"/about/moe's-organizational-structure",
                 element:<OrganizationalStructure/>
+            },
+            {
+                path:"/about/fact-sheets",
+                element:<FactSheet/>
             }
         //add other routes
         ],

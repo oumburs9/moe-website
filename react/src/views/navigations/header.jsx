@@ -81,7 +81,7 @@ const Navbar = () => {
     {name: "Who is who", link: "/about/who-is-who", hasDropDown: false},
     {name: "Power and Duties", link: "google.com", hasDropDown: false},
     {name: "Partners and Stakeholders", link: "google.com", hasDropDown: false},
-    {name: "Fact Sheets", link: "google.com", hasDropDown: false},
+    {name: "Fact Sheets", link: "/about/fact-sheets", hasDropDown: false},
     {name: "Agencies", link: "google.com", hasDropDown: false}];
   
   const educationSectorItems = [

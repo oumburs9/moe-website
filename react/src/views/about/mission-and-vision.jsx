@@ -1,16 +1,9 @@
 import Side from '../../components/side.component'
-import React, { useEffect } from "react";
+import React from "react";
 
-const Mission = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src="https://platform.twitter.com/widgets.js";
-    document.getElementsByClassName("twitter-embed")[0].appendChild(script);
-  }, []);
-
+function Mission(){
   return (
     <>
-    
       <nav>
         <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
           <li className='flex gap-2'>
