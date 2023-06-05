@@ -20,7 +20,7 @@ function FactSheet(){
               <h1 className="text-[50px]">Fact Sheets</h1>
               <h2 className='text-[30px]'>Fact Sheets - Ministry of Education (MoE) Ethiopia</h2>
             </div>
-            <div className="text-gray-700">
+            <div className="">
               <div className="mt-[1.5em]">
                 <h3 className="text-2xl"><strong>Brief History</strong></h3>
                 <p>The Ethiopian Federal Ministry of Ministry of Education (MoE)  was established in 1935,EFY</p>

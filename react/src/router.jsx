@@ -10,6 +10,9 @@ import OrganizationalStructure from './views/about/organizational-structure';
 import GeneralEducation from './views/education-sectors/general-education/general-education';
 import HigherEducation from './views/education-sectors/higher-education/higher-education';
 import FactSheet from './views/about/fact-sheet';
+import History from './views/about/history/history';
+import PartnersAndStakeholders from './views/about/partners-and-stakeholders';
+import PowerAndDuties from './views/about/power-and-duties';
 
 const router = createBrowserRouter([
     {
@@ -52,6 +55,18 @@ const router = createBrowserRouter([
             {
                 path:"/about/fact-sheets",
                 element:<FactSheet/>
+            },
+            {
+                path:"/about/history",
+                element:<History/>
+            },
+            {
+                path:"/about/partners-and-stakeholders",
+                element:<PartnersAndStakeholders/>
+            },
+            {
+                path:"/about/power-and-duties",
+                element:<PowerAndDuties/>
             }
         //add other routes
         ],

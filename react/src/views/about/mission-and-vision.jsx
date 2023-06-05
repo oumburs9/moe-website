@@ -1,5 +1,4 @@
 import Side from '../../components/side.component'
-import React from "react";
 
 function Mission(){
   return (
@@ -19,7 +18,7 @@ function Mission(){
             <div>
               <h1 className="text-[50px]">Mission, Vision and Values</h1>
             </div>
-            <div className="text-gray-700">
+            <div className="">
               <p className="mt-[1.5em]">
                 <h4 className="text-lg"><strong>Our Vision</strong></h4>
                 Sustainably building an education and training system that ensures quality and 

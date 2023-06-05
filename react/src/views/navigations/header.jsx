@@ -79,10 +79,10 @@ const Navbar = () => {
     {name: "Mission, Vision and Values", link: "/about/mission-and-vision", hasDropDown: false, },
     {name: "Organizational Structure", link: "/about/moe's-organizational-structure", hasDropDown : false},
     {name: "Who is who", link: "/about/who-is-who", hasDropDown: false},
-    {name: "Power and Duties", link: "google.com", hasDropDown: false},
-    {name: "Partners and Stakeholders", link: "google.com", hasDropDown: false},
+    {name: "Power and Duties", link: "/about/power-and-duties", hasDropDown: false},
+    {name: "Partners and Stakeholders", link: "/about/partners-and-stakeholders", hasDropDown: false},
     {name: "Fact Sheets", link: "/about/fact-sheets", hasDropDown: false},
-    {name: "Agencies", link: "google.com", hasDropDown: false}];
+    {name: "History", link: "/about/history", hasDropDown: false}];
   
   const educationSectorItems = [
     {name: "Higher Education", link: "/educations/higher-education", hasDropDown: false},
