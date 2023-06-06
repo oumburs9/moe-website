@@ -12,7 +12,7 @@ function Mission(){
           <li>Mission-and-Vision</li>
         </ol>
       </nav>
-      <div className="grid md:grid-cols-3 bg-white p-8 gap-5 text-[#21618c] my-[.67em]">
+      <div className="grid md:grid-cols-3 bg-white p-8 gap-5 text-[#156584] my-[.67em]">
         <div className="md:col-span-2 pr-4">
           <div>
             <div>
