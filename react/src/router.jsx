@@ -13,6 +13,10 @@ import FactSheet from './views/about/fact-sheet';
 import History from './views/about/history/history';
 import PartnersAndStakeholders from './views/about/partners-and-stakeholders';
 import PowerAndDuties from './views/about/power-and-duties';
+import Gallery from './views/Media/gallery';
+import News from './views/Media/news';
+import Magazines from './views/Media/magazines';
+import PressRelease from './views/Media/press-releases';
 
 const router = createBrowserRouter([
     {
@@ -67,6 +71,22 @@ const router = createBrowserRouter([
             {
                 path:"/about/power-and-duties",
                 element:<PowerAndDuties/>
+            },
+            {
+                path:"/media/gallery",
+                element:<Gallery/>
+            },
+            {
+                path:"/media/news",
+                element:<News/>
+            },
+            {
+                path:"/media/press-release",
+                element:<PressRelease/>
+            },
+            {
+                path:"/media/magazines",
+                element:<Magazines/>
             }
         //add other routes
         ],

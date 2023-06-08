@@ -72,7 +72,6 @@ const articles = [
                     <div className="twitter-embed">
                         <a
                             className="twitter-timeline"
-                            data-width="400"
                             data-height="600"
                             href="https://twitter.com/fdremoe?ref_src=twsrc%5Etfw"
                         >
