@@ -5,6 +5,7 @@ import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/custom-animations/cube-animation.css";
 import { images } from "../assets";
 import { useState } from "react";
+import Test from "../views/Test/test";
 
 const data = [
     {
@@ -14,6 +15,14 @@ const data = [
     {
         title: "Teacher",
         imageSrc: images.StudentswithTeacher,
+    },
+    {
+        title: "General Education",
+        imageSrc: images.Asfaw,
+    },
+    {
+        title: "Higher Education",
+        imageSrc: images.Yibeltal,
     },
 ];
 
@@ -67,17 +76,19 @@ const Slider = () => {
                             className="flex flex-col contact-icon absolute top-[10%] left-[10%] w-[40%] p-3 rounded-lg text-white items-center justify-center duration-75"
                         >
                             <div className="flex p-2 text-white">
-                                <p className="text-[48px] font-bold">
+                                <p className="text-[48px] font-semibold">
                                     {slide.title}
                                 </p>
                             </div>
                             <div className="flex p-2 text-white font-semibold">
+                               {slide.title === 'General Education'?
+                               <Test/> :
                                 <p className="">
                                     We are committed to transforming Ethiopian
                                     education through innovative and inclusive
                                     programs, empowering every student with the
                                     knowledge, skills, and opportunities.
-                                </p>
+                                </p>}
                             </div>
                             <div className="border-gray-200 border-[1px] mt-5 px-4 py-2 hover:cursor-pointer rounded-lg uppercase font-semibold">
                                 View details

@@ -2,7 +2,7 @@ import React from 'react';
 import Titles from '../../components/title.component';
 import Card from '../../components/news-card.component';
 
-const News = () => {
+const NewsHomepage = () => {
   const imageData = [
     {
       id: 1,
@@ -40,15 +40,6 @@ const News = () => {
       date: ' Mar 06, 2023',
       category:'Higher Education',
     },
-    {
-      id: 5,
-      image: 'https://moe.gov.et/storage/news/332282065_727188705617235_2661414443791959640_n_1678947162.jpg',
-      views: 5678,
-      title:'የአርባምንጭ ዩኒቨርሲቲ ለጋሞ ባይራ አዳሪ ትምህርት ቤት ግብዓት ለማሟላት እየሰራ ነው።',
-      paragraph:'የካቲት 27/2015ዓም .(የትምህርት ሚኒስቴር ) የአርባምንጭ ዩኒቨርሲቲ ከ16 ሚሊየን ብር በላይ ወጪ በማድረግ ለጋሞ ባይራ አዳሪ ሁለተኛ ደረጃ ትምህርት ቤት የትምህርት ግብዓቶችን የሟሟላት ስራ እየሰራ እንደሚገኝ ገልጿል፡፡',
-      date: ' Mar 06, 2023',
-      category:'Higher Education',
-    },
   ];
 
   
@@ -73,25 +64,23 @@ const News = () => {
   
   return (
     <>
-  
-     <div  className="px-4 mt-12 mx-auto sm:px-6 lg:px-8 container">
-      
+        <div className="px-4 mx-auto sm:px-6 lg:px-8 container">
           
-          <Titles title={jsonData2.title} subtitle={jsonData2.subtitle} />
+          <Titles title={jsonData2.title} subtitle={jsonData2.subtitle}/>
 
           <div className="grid max-w-md grid-cols-1 mx-auto mt-12 gap-x-16 gap-y-12 mb-10 sm:max-w-full sm:grid-cols-1 lg:grid-cols-3">
-            {imageData.map((jsonData) => (
-               <Card data={jsonData}/>
+            {imageData.map((jsonData, index) => (
+              index <= 2 ?
+               (<Card data={jsonData}/>): ''
             ))}
           </div>
         </div>
-    
   
     </>
   );
 };
 
-export default News;
+export default NewsHomepage;
 
 
 

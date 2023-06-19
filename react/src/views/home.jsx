@@ -5,7 +5,9 @@ import OurMinisters from "./about/ministers";
 
 import EducationSector from "./education-sectors/education-sector";
 import Slider from "../components/slider.component";
-import News from "./Media/news";
+import News from "./Media/news-homepage";
+import Services from "../components/services.component";
+
 
 const Home = () => {
   
@@ -19,8 +21,9 @@ const Home = () => {
                 <News />
 
                 <OurMinisters/>
-            
                <EducationSector/>
+               <Services/>
+            
             </div>
         </>
     );

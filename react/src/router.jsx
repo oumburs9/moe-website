@@ -17,6 +17,7 @@ import Gallery from './views/Media/gallery';
 import News from './views/Media/news';
 import Magazines from './views/Media/magazines';
 import PressRelease from './views/Media/press-releases';
+import Test from './views/Test/test';
 
 
 
@@ -74,6 +75,11 @@ const router = createBrowserRouter([
                 path:"/about/power-and-duties",
                 element:<PowerAndDuties/>
             },
+            {
+                path:"/test",
+                element:<Test/>
+            },
+           
             
           
          
