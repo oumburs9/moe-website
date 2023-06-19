@@ -30,7 +30,9 @@ const data = [
         facebookLink: "facebook.com",
         twitterLink: "twitter.com",
         peoplesUnder: [3, 4, 5, 6],
-        peoplesUnderPosition:'Executive Offices'
+        peoplesUnderPosition:'Executive Offices',
+        offices: [],
+        officesName: ''
     },
     {
         id:2,
@@ -783,14 +785,18 @@ function WhoIsWho() {
                         ))}
                     </div>
                 </div>
-                <div>
-                    <h2 className='text-[30px] mb-5'><span className='border-b-2 border-[#156584]'>{data[profileData].officesName}</span></h2>
-                    <div className='grid md:grid-cols-3'>
-                        {data[profileData].offices.map((person,index) => (
-                            <PeopleUnder data={data[data[profileData].offices[index]]} action={()=>setProfileData(data[data[profileData].offices[index]].id)}/>
-                        ))}
-                    </div>
-                </div>
+                {data[profileData].offices ?
+                    (
+                        <div>
+                            <h2 className='text-[30px] mb-5'><span className='border-b-2 border-[#156584]'>{data[profileData].officesName}</span></h2>
+                            <div className='grid md:grid-cols-3'>
+                                {data[profileData].offices.map((person,index) => (
+                                    <PeopleUnder data={data[data[profileData].offices[index]]} action={()=>setProfileData(data[data[profileData].offices[index]].id)}/>
+                                ))}
+                            </div>
+                        </div>
+                    ) : null
+                }
                 </div>
             </div>
         </>
