@@ -13,8 +13,10 @@ const data = [
         , youtubeLink: "youtube.com",
         facebookLink: "facebook.com",
         twitterLink: "twitter.com",
-        peoplesUnder: [1, 2, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
-        peoplesUnderPosition:'State Ministers, Minister Offices and Corporate Management'
+        peoplesUnder: [1, 2],
+        peoplesUnderPosition:'State Ministers',
+        offices: [41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+        officesName: 'Minister Offices and Corporate Management'
     },
 
     {
@@ -772,11 +774,23 @@ function WhoIsWho() {
                         <SomeModule2.BsYoutube className='text-white text-xl' />
                     </a>
                 </div>
-                <h2 className='text-[30px] mb-5'><span className='border-b-2 border-[#156584]'>{data[profileData].peoplesUnderPosition}</span></h2>
-                <div className='grid md:grid-cols-3'>
-                    {data[profileData].peoplesUnder.map((person,index) => (
-                        <PeopleUnder data={data[data[profileData].peoplesUnder[index]]} action={()=>setProfileData(data[data[profileData].peoplesUnder[index]].id)}/>
-                    ))}
+                <div>
+                <div className='flex flex-col gap-5'>
+                    <h2 className='text-[30px] mb-5'><span className='border-b-2 border-[#156584]'>{data[profileData].peoplesUnderPosition}</span></h2>
+                    <div className='grid md:grid-cols-3'>
+                        {data[profileData].peoplesUnder.map((person,index) => (
+                            <PeopleUnder data={data[data[profileData].peoplesUnder[index]]} action={()=>setProfileData(data[data[profileData].peoplesUnder[index]].id)}/>
+                        ))}
+                    </div>
+                </div>
+                <div>
+                    <h2 className='text-[30px] mb-5'><span className='border-b-2 border-[#156584]'>{data[profileData].officesName}</span></h2>
+                    <div className='grid md:grid-cols-3'>
+                        {data[profileData].offices.map((person,index) => (
+                            <PeopleUnder data={data[data[profileData].offices[index]]} action={()=>setProfileData(data[data[profileData].offices[index]].id)}/>
+                        ))}
+                    </div>
+                </div>
                 </div>
             </div>
         </>
