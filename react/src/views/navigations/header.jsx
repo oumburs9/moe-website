@@ -104,10 +104,10 @@ const Navbar = () => {
     {name: "Others", link: "google.com", hasDropDown: false}];
   
   const mediaItems = [
-    {name: "News", link: "/resources/policies-and-strategies", hasDropDown: false, },
-    {name: "Magazines", link: "google.com", hasDropDown : false},
-    {name: "Press Releases", link: "google.com", hasDropDown: false},
-    {name: "Gallery", link: "google.com", hasDropDown: false}];
+    {name: "News", link: "/media/news", hasDropDown: false},
+    {name: "Magazines", link: "/media/magazines", hasDropDown : false},
+    {name: "Press Releases", link: "/media/press-release", hasDropDown: false},
+    {name: "Gallery", link: "/media/gallery", hasDropDown: false}];
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
