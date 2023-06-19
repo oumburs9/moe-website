@@ -5,7 +5,8 @@ import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/custom-animations/cube-animation.css";
 import { images } from "../assets";
 import { useState } from "react";
-import Test from "../views/Test/test";
+
+import SliderTable from "./base/slider-table.component";
 
 const data = [
     {
@@ -18,13 +19,34 @@ const data = [
     },
     {
         title: "General Education",
-        imageSrc: images.Asfaw,
+        imageSrc: images.Selam,
     },
     {
         title: "Higher Education",
-        imageSrc: images.Yibeltal,
+        imageSrc: images.Addisu,
     },
 ];
+      const generalEdu = [
+        { category: 'Governmental Schools', value: 48051 },
+        { category: 'Non Governmental Schools', value: 8176 },
+        { category: 'Primary Schools', value: 37148 },
+        { category: 'Secondary Schools', value: 3778 },
+        { category: 'ABE Program', value: 4288 },
+        { category: 'Kindergarten', value: 11013 },
+        { category: 'Total', value: 56227 },
+      ];
+      const higherEdu = [
+        { category: 'Public Universties ', value: 50 },
+        { category: 'Science and Technology Universties', value: 2 },
+        { category: 'Research Universties', value: 7 },
+        { category: 'Applied Universties', value: 10 },
+        { category: 'Comprehensive Universties', value: 21 },
+        { category: 'Total Private Higher Educations', value: 325 },
+        { category: 'Private Universties', value: 5 },
+        { category: 'Private University Colleges' , value: 10 },
+        { category: 'Private Colleges' , value: 310 },
+        { category: 'Total', value: '' },
+      ];
 
 const Slider = () => {
     const AutoplaySlider = withAutoplay(AwesomeSlider);
@@ -65,7 +87,7 @@ const Slider = () => {
                         <motion.div
                             key={index}
                             initial={{ y: -100, opacity: 0 }}
-                            animate={{ y: 30, opacity: 1 }}
+                            animate={{ y: 20, opacity: 1 }}
                             transition={{
                                 duration: 3,
                                 delay: 1,
@@ -76,19 +98,20 @@ const Slider = () => {
                             className="flex flex-col contact-icon absolute top-[10%] left-[10%] w-[40%] p-3 rounded-lg text-white items-center justify-center duration-75"
                         >
                             <div className="flex p-2 text-white">
-                                <p className="text-[48px] font-semibold">
+                                <p className="text-[40px] font-semibold">
                                     {slide.title}
                                 </p>
                             </div>
-                            <div className="flex p-2 text-white font-semibold">
+                            <div className="flex px-2 text-white font-semibold">
                                {slide.title === 'General Education'?
-                               <Test/> :
+                               <SliderTable data={generalEdu}/> : (slide.title === 'Higher Education'? <SliderTable data={higherEdu}/> :
                                 <p className="">
                                     We are committed to transforming Ethiopian
                                     education through innovative and inclusive
                                     programs, empowering every student with the
                                     knowledge, skills, and opportunities.
-                                </p>}
+                                </p>
+                               )}
                             </div>
                             <div className="border-gray-200 border-[1px] mt-5 px-4 py-2 hover:cursor-pointer rounded-lg uppercase font-semibold">
                                 View details
