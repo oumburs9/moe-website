@@ -9,7 +9,7 @@ import ethiopia from "../../assets/images/ethiopia.png";
 // Footer Component
 const Footer = () => {
   return (
-    <footer className="relative footer bg-gradient-to-br from-white via-white to-blue-600/40 text-gray-500 dark:text-gray-200 px-4 h-[90vp]">
+    <footer className="relative footer mt-40 bg-gradient-to-br from-white via-white to-blue-600/40 text-gray-500 dark:text-gray-200 px-4 h-[90vp]">
       <div className="container mx-auto">
         <div className="grid grid-cols-12">
           <div className="col-span-12">
