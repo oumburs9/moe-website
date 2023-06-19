@@ -1,9 +1,22 @@
-import React, { useState } from 'react'
-import Card from '../../../components/card.componet';
+import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+
+import Card from '../../../components/education-card.componet';
+import { fetchHigherEducations } from '../../../redux/education/higherEducationSlice ';
+import Spinner from '../../../components/base/spinner';
 
 const HigherEducation = () => {
 
     const [selectedLanguage, setSelectedLanguage] = useState('amharic');
+    const { higherEducations, loading, error } = useSelector(state => state.higherEducation);
+
+    const dispatch  = useDispatch()
+
+    useEffect(() => {
+      dispatch(fetchHigherEducations())
+    },[])
+
+
     const translationsHigherEducations ={ 
         english: [ 
               
@@ -70,8 +83,10 @@ const HigherEducation = () => {
     const handleLanguageChange = (language) => {
         setSelectedLanguage(language);
       };
-    
-      const data = translationsHigherEducations[selectedLanguage];
+      const educationData = higherEducations[0]?.[selectedLanguage] || []
+
+      const data = educationData;
+      // const data = translationsHigherEducations[selectedLanguage];
     
       return (
         <><nav>
@@ -92,7 +107,15 @@ const HigherEducation = () => {
                 Amharic
               </button>
             </div>
+            {loading ? (
+              <div className='flex items-center justify-center'>
+                <Spinner className="w-16 h-16" />
+              </div>
+      ) : error ? (
+        <div>Error: {error}</div>
+      ) : (
             <Card data={data} />
+      )}
           </div></>
       );
 }

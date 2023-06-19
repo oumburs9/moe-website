@@ -14,6 +14,8 @@ import History from './views/about/history/history';
 import PartnersAndStakeholders from './views/about/partners-and-stakeholders';
 import PowerAndDuties from './views/about/power-and-duties';
 
+
+
 const router = createBrowserRouter([
     {
         path:'/',
@@ -67,7 +69,10 @@ const router = createBrowserRouter([
             {
                 path:"/about/power-and-duties",
                 element:<PowerAndDuties/>
-            }
+            },
+            
+          
+         
         //add other routes
         ],
     },  

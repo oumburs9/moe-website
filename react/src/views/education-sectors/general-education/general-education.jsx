@@ -1,11 +1,25 @@
-import React, { useState } from 'react'
-import Card from '../../../components/card.componet';
+import React, { useState, useEffect } from 'react'
+import { useSelector,useDispatch } from 'react-redux';
+
+import Card from '../../../components/education-card.componet';
+import { fetchGeneralEducations } from '../../../redux/education/generalEducationSlice';
+import Spinner from '../../../components/base/spinner';
 
 const GeneralEducation = () => {
 
     const [selectedLanguage, setSelectedLanguage] = useState('amharic');
+    const { generalEducations, loading, error } = useSelector(state => state.generalEducation);
 
-    const translationsGeneralEducations ={ 
+    const dispatch  = useDispatch()
+
+    useEffect(() => {
+      dispatch(fetchGeneralEducations())
+    },[])
+
+ 
+    
+
+    const translationsGeneralEducations = { 
         english: [ 
               
           {
@@ -170,10 +184,12 @@ const GeneralEducation = () => {
         setSelectedLanguage(language);
       };
     
-      const data = translationsGeneralEducations[selectedLanguage];
-    
+      // const data = translationsGeneralEducations[selectedLanguage];
+      // const englishEducations = educations[0]?.english || [];
+      const data = generalEducations[0]?.[selectedLanguage] || [];
       return (
-        <><nav>
+        <>
+        <nav>
           <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
             <li className='flex gap-2'>
               <a href="#">Home</a>
@@ -181,7 +197,8 @@ const GeneralEducation = () => {
             </li>
             <li>General-Education</li>
           </ol>
-        </nav><div>
+        </nav>
+        <div>
             <div className='flex pl-14 py-10  bg-[#21618c] text-2xl font-bold text-white'>General Education Development Program Sector</div>
 
             <div className='flex flex-row content-left justify-evenly mt-4'>
@@ -192,8 +209,17 @@ const GeneralEducation = () => {
                 Amharic
               </button>
             </div>
+            {loading ? (
+              <div className='flex items-center justify-center'>
+                <Spinner className="w-16 h-16" />
+              </div>
+      ) : error ? (
+        <div>Error: {error}</div>
+      ) : (
             <Card data={data} />
-          </div></>
+      )}
+          </div>
+          </>
       );
 }
 

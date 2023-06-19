@@ -5,7 +5,7 @@ import * as SomeModule2 from 'react-icons/bs';
 function TopNavBar() {
   return (
 
-    <nav className="flex items-center justify-between flex-wrap  bg-[#156584] w-full py-2">
+    <nav className="flex items-center justify-between flex-wrap  bg-[#156584] w-full  max-sm:hidden">
 
       <div className="menu w-full flex flex-grow items-center justify-evenly lg:w-auto lg:px-3 px-8">
         <div className="flex align-middle items-center justify-center text-md font-bold text-blue-700"> 

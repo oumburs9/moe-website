@@ -17,7 +17,8 @@ const Dropdown = ( props) => {
   };
 
   return (
-    <><li
+    <>
+    <li
       onMouseLeave={handleDropdownOff}
     >
 
@@ -52,7 +53,7 @@ const Dropdown = ( props) => {
                   <Link
                     onClick={handleDropdownOff}
                     to={item.link}
-                    className="w-full block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white shadow-md hover:shadow-none"
+                    className="w-full block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white shadow-sm hover:shadow-none"
                   >
                     {item.hasDropDown || item.name}
                     {item.hasDropDown ? <Dropdown isMenuOpen={isMenuOpen} name={item.name} items={[{ name: "Who is who", hasDropDown: true, }]} sideBar={true} /> : <div> </div>}
@@ -112,8 +113,9 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <><nav className="bg-white w-full m-0 shadow-md z-10 sticky top-0">
-      <div className=" w-full max-w-screen-xl flex flex-wrap justify-between h-min mx-auto py-3.5 px-16">
+    <>
+    <nav className="bg-white w-full m-0 shadow-md z-30 sticky top-0 ">
+      <div className=" w-full max-w-screen-xl flex flex-wrap justify-between h-min mx-auto px-16">
         <Link to='/' className="flex items-center justify-center text-justify h-full py-2">
           <img
             src="https://moe.gov.et/logom.png"
