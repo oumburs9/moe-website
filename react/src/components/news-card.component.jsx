@@ -39,7 +39,7 @@ export const Card = ({ data }) => {
             }
           </a>
   
-          <p className="mt-6 text-xl font-semibold">
+          <p className="mt-6 text-lg font-semibold">
             <a
               href="#"
               title=""
@@ -49,7 +49,7 @@ export const Card = ({ data }) => {
             </a>
           </p>
   
-          <p className="mt-4 text-gray line-clamp-2">{paragraph && paragraph}</p>
+          <p className="mt-4 text-gray text-sm line-clamp-2">{paragraph && paragraph}</p>
   
           <div className="h-0 mt-6 mb-4 border-t-2 border-light/40 border-dashed"></div>
   
