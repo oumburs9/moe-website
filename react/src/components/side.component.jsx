@@ -86,16 +86,16 @@ const articles = [
                 </div>
                 <div className="border border-gray-300 rounded-md p-4">
                     <div className="flex gap-5 mb-5">
-                        <img src={articles[0].imageSrc} alt="avator" className="h-20 w-20 object-cover" />
-                        <p>{articles[0].content}</p>
+                        <img src={articles[0].imageSrc} alt="avator" className="h-[78px] w-[78px] object-cover" />
+                        <p className="line-clamp-3">{articles[0].content}</p>
                     </div>
                     <div className="flex gap-5 mb-5">
-                        <img src={articles[1].imageSrc} alt="avator" className="h-20 w-20 object-cover" />
-                        <p>{articles[1].content}</p>
+                        <img src={articles[1].imageSrc} alt="avator" className="h-[78px] w-[78px] object-cover" />
+                        <p className="line-clamp-3">{articles[1].content}</p>
                     </div>
                     <div className="flex gap-5 mb-5">
-                        <img src={articles[2].imageSrc} alt="avator" className="h-20 w-20 object-cover" />
-                        <p className="truncate ...">{articles[2].content}</p>
+                        <img src={articles[2].imageSrc} alt="avator" className="h-[78px] w-[78px] object-cover" />
+                        <p className="line-clamp-3">{articles[2].content}</p>
                     </div>
                     <button className="bg-[#21618c] text-white py-3 px-6 rounded-sm shadow-blue-200 shadow-md"><strong>VIEW ALL</strong></button>
                 </div>

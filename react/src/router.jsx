@@ -18,6 +18,7 @@ import News from './views/Media/news';
 import Magazines from './views/Media/magazines';
 import PressRelease from './views/Media/press-releases';
 import Test from './views/Test/test';
+import DetailNews from './views/Media/detail-news';
 
 
 
@@ -98,6 +99,10 @@ const router = createBrowserRouter([
             {
                 path:"/media/magazines",
                 element:<Magazines/>
+            },
+            {
+                path:"/media/news/id",
+                element:<DetailNews/>
             }
         //add other routes
         ],

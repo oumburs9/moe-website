@@ -3,7 +3,7 @@ import Titles from '../../components/title.component';
 import Card from '../../components/news-card.component';
 
 const News = () => {
-  const imageData = [
+  const newsData = [
     {
       id: 1,
       image: 'https://moe.gov.et/storage/news/333587917_1158941468123913_6021443852551221056_n_1678947552.jpg',
@@ -80,7 +80,7 @@ const News = () => {
           <Titles title={jsonData2.title} subtitle={jsonData2.subtitle} />
 
           <div className="grid max-w-md grid-cols-1 mx-auto mt-12 gap-x-16 gap-y-12 mb-10 sm:max-w-full sm:grid-cols-1 lg:grid-cols-3">
-            {imageData.map((jsonData) => (
+            {newsData.map((jsonData) => (
                <Card data={jsonData}/>
             ))}
           </div>
