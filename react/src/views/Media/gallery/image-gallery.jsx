@@ -1,4 +1,4 @@
-import Side from '../../components/side.component'
+import Side from '../../../components/side.component'
 
 const imageData = [
     {
@@ -52,7 +52,7 @@ const videoData = [
     }
 ]
 
-function Gallery() {
+function ImageGallery() {
     return(
         <>
             <nav>
@@ -135,4 +135,4 @@ function Gallery() {
     )
 }
 
-export default Gallery
+export default ImageGallery

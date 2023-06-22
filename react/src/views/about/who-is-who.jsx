@@ -23,7 +23,7 @@ const data = [
         id:1,
         name: 'Dr.Samuel Kifle (PhD)',
         image: "https://moe.gov.et/storage/minimsg/photo_2021-10-12_15-45-11_1634042555.jpg",
-        department: "Higher Education",
+        department: "Higher Education Development Sector",
         position: "Higher Education Minister",
         story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
         , youtubeLink: "youtube.com",
@@ -38,7 +38,7 @@ const data = [
         id:2,
         name: 'Dr.Fanta Mandefro (PhD)',
         image: 'https://moe.gov.et/storage/minimsg/photo_2021-10-12_15-33-45_1634042442.jpg',
-        department: "General Education",
+        department: "General Education Development Sector",
         position: "General Education Minister",
         story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
         , youtubeLink: "youtube.com",

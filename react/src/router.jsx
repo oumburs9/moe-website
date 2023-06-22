@@ -13,12 +13,13 @@ import FactSheet from './views/about/fact-sheet';
 import History from './views/about/history/history';
 import PartnersAndStakeholders from './views/about/partners-and-stakeholders';
 import PowerAndDuties from './views/about/power-and-duties';
-import Gallery from './views/Media/gallery';
 import News from './views/Media/news';
 import Magazines from './views/Media/magazines';
 import PressRelease from './views/Media/press-releases';
 import Test from './views/Test/test';
 import DetailNews from './views/Media/detail-news';
+import VideoGallery from './views/Media/gallery/video-gallery';
+import ImageGallery from './views/Media/gallery/image-gallery';
 
 
 
@@ -84,10 +85,7 @@ const router = createBrowserRouter([
             
           
          
-            {
-                path:"/media/gallery",
-                element:<Gallery/>
-            },
+            
             {
                 path:"/media/news",
                 element:<News/>
@@ -103,6 +101,14 @@ const router = createBrowserRouter([
             {
                 path:"/media/news/id",
                 element:<DetailNews/>
+            },
+            {
+                path:"/media/gallery/image",
+                element:<ImageGallery/>
+            },
+            {
+                path:"/media/gallery/videos",
+                element:<VideoGallery/>
             }
         //add other routes
         ],

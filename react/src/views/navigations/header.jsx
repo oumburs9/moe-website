@@ -107,7 +107,7 @@ const Navbar = () => {
     {name: "News", link: "/media/news", hasDropDown: false},
     {name: "Magazines", link: "/media/magazines", hasDropDown : false},
     {name: "Press Releases", link: "/media/press-release", hasDropDown: false},
-    {name: "Gallery", link: "/media/gallery", hasDropDown: false}];
+    {name: "Gallery", link: "/media/gallery/image", hasDropDown: false}];
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
