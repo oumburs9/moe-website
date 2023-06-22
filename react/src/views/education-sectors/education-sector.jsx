@@ -8,7 +8,7 @@ export const EducationSector = () => {
         <section className="relative py-10 sm:py-16 lg:py-24">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 container">
                 <Titles title={"Education Sector"} />
-                <div className="grid max-w-md grid-cols-1 mx-auto mt-12 lg:max-w-full lg:mt-16 lg:grid-cols-2 gap-x-16 gap-y-12">
+                <div className="grid max-w-md grid-cols-1 mx-auto md:mx-20 mt-12 lg:max-w-full lg:mt-16 lg:grid-cols-2 gap-x-10 lg:gap-x-16 gap-y-12">
                     <div className="py-4 px-6 rounded-lg shadow-xl shadow-sky/40 hover:shadow-[#3C8FC3]/60 bg-[#3C8FC3] hover:-translate-y-1 transition-transform cursor-pointer">
                         <p className="text-3xl font-semibold mb-4 text-[#fff]">
                             General Education Development Sector

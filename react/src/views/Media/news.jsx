@@ -52,6 +52,7 @@ const News = () => {
   ];
 
   
+  
   const jsonData1 = {
     image: 1234,
     views: 5678,

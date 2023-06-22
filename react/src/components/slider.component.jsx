@@ -19,11 +19,11 @@ const data = [
     },
     {
         title: "General Education",
-        imageSrc: images.Selam,
+        imageSrc: images.Students,
     },
     {
         title: "Higher Education",
-        imageSrc: images.Addisu,
+        imageSrc: images.StudentswithTeacher,
     },
 ];
       const generalEdu = [

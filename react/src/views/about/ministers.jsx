@@ -35,7 +35,7 @@ const ministersData = {
       <div className="relative py-10 sm:py-16 lg:py-24">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 container max-w-9xl">
           <Titles title={"Our Ministers"} />
-          <div className="grid max-w-md grid-cols-1 mx-auto mt-12 lg:max-w-full lg:mt-16 lg:grid-cols-3 lg:gap-x-28 gap-y-10 ">
+          <div className="grid mx-auto md:mx-10 max-w-md grid-cols-1 mt-12 lg:max-w-full lg:mt-16 lg:grid-cols-3 lg:gap-x-28 gap-y-10 ">
             {ministersData.ministers.map((minister, index) => (
               <div key={index} className="rounded flex flex-col mx-auto">
                 <div className="rounded-xl overflow-hidden w-96 md:w-80 lg:96 relative drop-shadow-xl">

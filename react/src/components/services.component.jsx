@@ -32,7 +32,7 @@ const Services = () => {
         <>
             <div className="h-[100vh-16px] px-4 py-10 mx-auto sm:px-6 lg:px-8 container">
                 <Titles title={jsonData2.title} subtitle={jsonData2.subtitle} />
-                <div className="grid max-w-md grid-cols-1 mx-auto mt-12 gap-x-16 gap-y-12 mb-10 sm:max-w-full md:grid-cols-2">
+                <div className="grid max-w-md grid-cols-1 mx-auto md:mx-20 mt-12 gap-x-10 lg:gap-x-16 gap-y-12 mb-10 sm:max-w-full md:grid-cols-2">
                     {imageData.map((jsonData, index) =>
                         index <= 2 ? <Card data={jsonData} /> : ""
                     )}
