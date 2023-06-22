@@ -2,6 +2,7 @@ import {images} from '../../assets/index'
 import * as SomeModule from 'react-icons/fa';
 import * as SomeModule2 from 'react-icons/bs';
 import { useState } from 'react';
+import Titles from '../../components/title.component';
 const data = [
     {
         id:0,
@@ -709,6 +710,11 @@ function WhoIsWho() {
 
     const [profileData, setProfileData] = useState(0)
 
+    const header = {
+        title: 'Who is Who',
+        subtitle: 'Who is Who at MoE'
+    }
+
     return (
         <>
             <nav>
@@ -726,7 +732,9 @@ function WhoIsWho() {
                     </li>
                 </ol>
             </nav>
-            <h1 className="text-[50px] text-[#156584] my-5 ml-10">Who is Who at MOE</h1>
+            <div className='p-20'>
+                <Titles title={header.title} subtitle={header.subtitle} />
+            </div>
             <div className="mx-20 text-[#156584]">
                 <h2 className='text-[30px] mb-5 underline'>{data[profileData].department}</h2>
                 <div className="grid grid-cols-5">

@@ -1,4 +1,5 @@
 import Side from '../../../components/side.component'
+import Titles from '../../../components/title.component'
 
 const imageData = [
     {
@@ -53,6 +54,12 @@ const videoData = [
 ]
 
 function ImageGallery() {
+
+    const header = {
+        title: 'Image Gallery',
+        subtitle: 'this is sample subtitle'
+    }
+
     return(
         <>
             <nav>
@@ -64,10 +71,9 @@ function ImageGallery() {
                     <li>Gallery</li>
                 </ol>
             </nav>
-            {/* <div className='flex gap-3 p-8 text-[#156584]'>
-                <button className='focus:underline'>IMAGES</button>
-                <button className='focus:underline'>VIDEOS</button>
-            </div> */}
+            <div className='p-10'>
+                <Titles title={header.title} subtitle={header.subtitle} />
+            </div>
             <div className="grid md:grid-cols-4 bg-white p-8 gap-5 text-[#156584] my-[.67em]">
                 <div className="md:col-span-3 pr-4">
                     <div className="grid gap-4">
@@ -79,15 +85,6 @@ function ImageGallery() {
                                             <img src={item.imageSrc} className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
                                         </div>
                                     ))}
-                                    {/* <div className="duration-700 ease-in-out" data-carousel-item="">
-                                        <img src='https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg' className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
-                                    </div>
-                                    <div className="duration-700 ease-in-out" data-carousel-item="active">
-                                        <img src='https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg' className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
-                                    </div>
-                                    <div className="duration-700 ease-in-out" data-carousel-item="">
-                                        <img src='https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg' className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
-                                    </div> */}
                                 </div>
                                 <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
                                     <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">

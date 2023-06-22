@@ -3,7 +3,7 @@ export const Card = ({ data }) => {
 
     const colors = ['#F8BE15','#D1503E','#3C8FC2','#1F48A2'];
     const randomColor = colors[Math.floor(Math.random()*colors.length)];
-    const { image='', views='', link = '', paragraph='', title='', category='', date='' } = data;
+    const { videoSrc='', views='', link = '', title='', category='', date='' } = data;
   
     let viewsCount = views;
     if (views > 1000) {
@@ -22,11 +22,9 @@ export const Card = ({ data }) => {
             target="_blank"
             className="relative block aspect-w-4 aspect-h-3 overflow-hidden group-hover:drop-shadow-md rounded"
           >
-            <img
-              className="object-cover sm:h-52 w-full h-full group-hover:scale-125 transition-transform delay-0"
-              src={image}
-              alt=""
-            />
+            <video className="object-cover sm:h-52 w-full h-full group-hover:scale-125 transition-transform delay-0">
+                <source  src={videoSrc} type="video/mp4"/>
+            </video>
             {
               category !== '' ? (
             <span
@@ -43,16 +41,11 @@ export const Card = ({ data }) => {
             <a
               href="#"
               title=""
-              className="text-dark transition-colors group-hover:text-blue line-clamp-2"
+              className="text-dark transition-colors group-hover:text-blue line-clamp-2 pb-1 border-b-2 border-light/40 border-dashed"
             >
-              {title || 'How to manage your remote team?'}
+              {title || 'No Title/Description'}
             </a>
           </p>
-  
-          <p className="mt-4 text-gray text-sm line-clamp-2">{paragraph && paragraph}</p>
-  
-          <div className="h-0 mt-6 mb-4 border-t-2 border-light/40 border-dashed"></div>
-  
           <div className="flex justify-between text-gray-500">
             <span className="block text-sm font-bold tracking-widest uppercase">
               {date}

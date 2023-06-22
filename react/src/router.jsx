@@ -20,6 +20,7 @@ import Test from './views/Test/test';
 import DetailNews from './views/Media/detail-news';
 import VideoGallery from './views/Media/gallery/video-gallery';
 import ImageGallery from './views/Media/gallery/image-gallery';
+import VideoDetails from './views/Media/gallery/video-details';
 
 
 
@@ -109,6 +110,10 @@ const router = createBrowserRouter([
             {
                 path:"/media/gallery/videos",
                 element:<VideoGallery/>
+            },
+            {
+                path:"/media/gallery/videos/id",
+                element:<VideoDetails/>
             }
         //add other routes
         ],
