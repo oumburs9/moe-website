@@ -89,7 +89,7 @@ const Slider = () => {
                             initial={{ y: -100, opacity: 0 }}
                             animate={{ y: 20, opacity: 1 }}
                             transition={{
-                                duration: 3,
+                                duration: 1,
                                 delay: 1,
                                 ease: "easeIn",
                                 repeat: Infinity,

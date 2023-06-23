@@ -69,7 +69,7 @@ const videoData = [
 ];
 
 function VideoDetails() {
-    const [detailData] = useState(0)
+    const [detailData] = useState(3)
     return (
         <>
             <nav>
