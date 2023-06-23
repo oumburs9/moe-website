@@ -3,7 +3,7 @@ import * as SomeModule from 'react-icons/fa';
 import * as SomeModule2 from 'react-icons/bs';
 import { useState } from 'react';
 import Titles from '../../components/title.component';
-const data = [
+export const data = [
     {
         id:0,
         name: 'H.E Pr.Brihanu Nega',
@@ -19,9 +19,21 @@ const data = [
         offices: [41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
         officesName: 'Minister Offices and Corporate Management'
     },
-
     {
         id:1,
+        name: 'Dr.Fanta Mandefro (PhD)',
+        image: 'https://moe.gov.et/storage/minimsg/photo_2021-10-12_15-33-45_1634042442.jpg',
+        department: "General Education Development Sector",
+        position: "General Education Minister",
+        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
+        , youtubeLink: "youtube.com",
+        facebookLink: "facebook.com",
+        twitterLink: "twitter.com",
+        peoplesUnder: [7, 8, 9, 10],
+        peoplesUnderPosition:'Executive Offices'
+    },
+    {
+        id:2,
         name: 'Dr.Samuel Kifle (PhD)',
         image: "https://moe.gov.et/storage/minimsg/photo_2021-10-12_15-45-11_1634042555.jpg",
         department: "Higher Education Development Sector",
@@ -34,19 +46,6 @@ const data = [
         peoplesUnderPosition:'Executive Offices',
         offices: [],
         officesName: ''
-    },
-    {
-        id:2,
-        name: 'Dr.Fanta Mandefro (PhD)',
-        image: 'https://moe.gov.et/storage/minimsg/photo_2021-10-12_15-33-45_1634042442.jpg',
-        department: "General Education Development Sector",
-        position: "General Education Minister",
-        story: "Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, explicabo id porro soluta asperiores tempore, cupiditate fuga obcaecati rem magni hic ipsum aspernatur aliquid ratione earum minus rerum natus distinctio.amet consectetur adipisicing elit. Ipsam odit nesciunt dolores laudantium autem? Officiis explicabo adipisci architecto deserunt culpa."
-        , youtubeLink: "youtube.com",
-        facebookLink: "facebook.com",
-        twitterLink: "twitter.com",
-        peoplesUnder: [7, 8, 9, 10],
-        peoplesUnderPosition:'Executive Offices'
     },
 
     {
