@@ -8,9 +8,7 @@ const header = {
 }
 
 function OrganizationalStructure() {
-    const [orgData,setOrgData] = useState(0)
     const minister = data.filter(d => d.id === 0 )[0]
-    // console.log(minister)
     const getPerson = (id)=>{
         return data.filter(p=>p.id === id)[0]
     }
@@ -31,11 +29,10 @@ function OrganizationalStructure() {
                 <div className="flex flex-col mt-20">
                     <div className='flex flex-col justify-center border-b-2 border-red-500'>
                         <div className='flex justify-center'>
-                            <img src="https://moe.gov.et/logom.png" alt="MoE logo" />
+                        <img src={minister.logo} alt="MoE logo" />
                         </div>
                         <div className='flex justify-center'><span className='h-10 w-1 bg-black'></span></div>
                     </div>
-                    {/* hhhhhhhhhhhhhhhhhhhh */}
                     <div className='flex justify-between gap-4'>
                         {minister.peoplesUnder.map((id,x) => 
                         <div className='flex flex-col'>
@@ -65,21 +62,6 @@ function OrganizationalStructure() {
                                     </div>)}
                                 </div>
                                 )}
-                                {/* <div className='flex flex-col'>
-                                    <div className='flex flex-col'>
-                                        <div className='flex justify-center'><span className='h-10 w-1 bg-black'></span></div>
-                                        <div className='flex justify-end'><h3 className='p-2 w-min h-min text-sm bg-white shadow-lg hover:shadow-md'>Curriculum Development Executive</h3></div>
-                                        <div className='flex justify-end'><span className='h-10 w-[2px] bg-[#3C8FC3]'></span></div>
-                                    </div>
-                                    <div className='border-r-2 border-[#3C8FC3]'>
-                                        <div className='flex flex-col gap-5'>
-                                            <div className='flex items-center'>
-                                                <p className='p-2 w-min text-sm mx-auto bg-white shadow-lg hover:shadow-md'>Curriculum Development Executive</p>
-                                                <span className='h-1 w-3 bg-black'></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> */}
                             </div>
                         </div>)}
                         
