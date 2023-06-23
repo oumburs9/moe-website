@@ -1,5 +1,4 @@
 import React from 'react'
-import {images} from '../../assets/index'
 import Titles from '../../components/title.component'
 
 const header = {
@@ -44,7 +43,7 @@ function OrganizationalStructure() {
                                 </div>
                                 <div className='border-l-2 border-[#3C8FC3]'>
                                     <div className='flex flex-col gap-5'>
-                                    <div className='flex items-center'>
+                                        <div className='flex items-center'>
                                             <span className='h-1 w-3 bg-black'></span>
                                             <p className='p-2 w-min text-sm mx-auto bg-white shadow-lg hover:shadow-md'>Curriculum Development Executive</p>                                            
                                         </div>
@@ -264,10 +263,6 @@ function OrganizationalStructure() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="">
-                <img src={images.Structure1} alt="higher structure" />
-                <img src={images.Structure2} alt="lower structure" />
             </div>
         </div>
         </>
