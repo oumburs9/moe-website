@@ -7,6 +7,7 @@ export const data = [
     {
         id:0,
         name: 'H.E Pr.Brihanu Nega',
+        logo: 'https://moe.gov.et/logom.png',
         image: 'https://moe.gov.et/storage/minimsg/%E1%8C%B0%E1%8C%B0%E1%8C%B02014_1634039719.jpg',
         department: "Minister",
         position: "Minister Of Education",
