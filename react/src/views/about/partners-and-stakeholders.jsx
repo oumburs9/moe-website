@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Side from '../../components/side.component'
+import Titles from '../../components/title.component'
 
 const partnersData = [
     {
@@ -178,6 +179,10 @@ const stakeholdersData = [
         link:''
     }
 ]
+const PageHeader = {
+    title:"Main Partners and Stakeholders",
+    subtitle:"Main Partners and Stakeholders of Ministry of Education"
+}
 
 function PartnersAndStakeholders() {
 
@@ -197,12 +202,13 @@ function PartnersAndStakeholders() {
             <div className="grid md:grid-cols-3 bg-white p-8 gap-5 text-[#156584] my-[.67em]">
                 <div className="md:col-span-2 pr-4">
                     <div className=''>
-                        <h1 className='text-[50px]'>Main Partners and Stakeholders of Ministry of Education</h1>
-                        <div className='mt-[2em]'>
+                        <Titles title={PageHeader.title} subtitle={PageHeader.subtitle}/>
+                        <div className='mt-[3em]'>
                             <h1 className='text-[30px] mb-5'><span className='underline'>Main Partners</span> (Donors):</h1>
                             <ul className='grid grid-cols-3 gap-10 list-disc ml-5 text-[18px]'>
                                 {partnersData.map((partner) => (
-                                    <li className='hover:text-[20px] hover:underline'>
+                                    <li className='hover:text-red-400 hover:underline flex list-none items-center'>
+                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                                         <a href={partner.link}>{partner.name}</a>
                                     </li>
                                 ))}
@@ -212,8 +218,10 @@ function PartnersAndStakeholders() {
                             <h1 className='text-[30px] mb-5'><span className='underline'>Main Stakeholders</span>:</h1>
                             <ul className='grid grid-cols-3 gap-10 list-disc ml-5 text-[18px]'>
                                 {stakeholdersData.map((stakeholder) => (
-                                    <li className='hover:text-[20px] hover:underline'>
-                                        <a href={stakeholder.link}>{stakeholder.name}</a>
+                                    
+                                    <li className='hover:text-red-400 hover:underline flex list-none items-center'>
+                                    <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <a href={stakeholder.link}>{stakeholder.name}</a>
                                     </li>
                                 ))}
                             </ul>
