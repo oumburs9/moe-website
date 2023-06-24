@@ -63,9 +63,9 @@ function Mission() {
             <div className="">
               {contents.map(content => (
                 <div className="mt-[3em]">
-                  <h4 className="text-2xl mb-3"><strong>{content.title}</strong></h4>
+                  <h4 className="text-2xl font-bold mb-3">{content.title}</h4>
                   <p className='mb-3'>{content.paragraph}</p>
-                  <ul className='grid md:grid-cols-2 gap-x-10 mb-3'>
+                  <ul className='grid md:grid-cols-2 gap-x-10 gap-y-2'>
                     {content.list ? content.list.map(c => <ListItem content={c} />) : ''}
                   </ul>
                 </div>
