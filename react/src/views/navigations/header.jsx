@@ -90,9 +90,9 @@ const Navbar = () => {
     {name: "General Education", link: "/educations/general-education", hasDropDown : false}];
   
   const announcementItems = [
-    {name: "Job Vacancies", link: "/resources/policies-and-strategies", hasDropDown: false, },
-    {name: "Notices", link: "google.com", hasDropDown : false},
-    {name: "Tender", link: "google.com", hasDropDown: false}];
+    {name: "Job Vacancies", link: "/announcement/job-vacancy", hasDropDown: false, },
+    {name: "Notices", link: "/announcement/notices", hasDropDown : false},
+    {name: "Tender", link: "/announcement/tender", hasDropDown: false}];
 
   const resourceItems = [
     {name: "Policies-and-strategies", link: "/resources/policies-and-strategies", hasDropDown: false, },

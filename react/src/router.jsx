@@ -21,6 +21,7 @@ import DetailNews from './views/Media/detail-news';
 import VideoGallery from './views/Media/gallery/video-gallery';
 import ImageGallery from './views/Media/gallery/image-gallery';
 import VideoDetails from './views/Media/gallery/video-details';
+import JobVacancies from './views/announcements/job-vacancies';
 
 
 
@@ -114,6 +115,11 @@ const router = createBrowserRouter([
             {
                 path:"/media/gallery/videos/id",
                 element:<VideoDetails/>
+            },
+            // announcement
+            {
+                path:"/announcement/job-vacancy",
+                element:<JobVacancies/>
             }
         //add other routes
         ],
