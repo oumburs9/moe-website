@@ -96,12 +96,12 @@ const Navbar = () => {
 
   const resourceItems = [
     {name: "Policies-and-strategies", link: "/resources/policies-and-strategies", hasDropDown: false, },
-    {name: "Guidlines and Standards", link: "google.com", hasDropDown : false},
-    {name: "Plans and Reports", link: "google.com", hasDropDown: false},
-    {name: "Annual Abstracts", link: "google.com", hasDropDown: false},
-    {name: "Digital Library", link: "google.com", hasDropDown: false},
-    {name: "E Learning", link: "google.com", hasDropDown: false},
-    {name: "Others", link: "google.com", hasDropDown: false}];
+    {name: "Guidlines and Standards", link: "/resource/guidlinesandstandards", hasDropDown : false},
+    {name: "Plans and Reports", link: "/resource/plansandreports", hasDropDown: false},
+    {name: "Annual Abstracts", link: "/resource/annualabstracts", hasDropDown: false},
+    {name: "Digital Library", link: "/resource/digitallibrary", hasDropDown: false},
+    {name: "E Learning", link: "/resource/elearning", hasDropDown: false},
+    {name: "Others", link: "/resource/others", hasDropDown: false}];
   
   const mediaItems = [
     {name: "News", link: "/media/news", hasDropDown: false},

@@ -1,136 +1,129 @@
 import { useState } from "react"
 import Titles from "../../components/title.component"
 
-const fileList = [
+export const FileList = [
     {
-        fileName: "Document1.docx",
-        fileSize: "1.5 MB",
-        dateUploaded: "2023-06-01",
-        lastUpdated: "2023-06-05",
-        uploadedBy: "John Doe"
+        Description: "Document1",
+        Size: "1.5 MB",
+        Format: "docx",
+        Date: "2023-06-01"
     },
     {
-        fileName: "Presentation.pptx",
-        fileSize: "3.2 MB",
-        dateUploaded: "2023-06-02",
-        lastUpdated: "2023-06-07",
-        uploadedBy: "Jane Smith"
+        Description: "Presentation",
+        Size: "3.2 MB",
+        Format: "pptx",
+        Date: "2023-06-02"
     },
     {
-        fileName: "Spreadsheet.xlsx",
-        fileSize: "2.8 MB",
-        dateUploaded: "2023-06-03",
-        lastUpdated: "2023-06-09",
-        uploadedBy: "David Johnson"
+        Description: "Spreadsheet",
+        Size: "2.8 MB",
+        Format: "xlsx",
+        Date: "2023-06-03"
     },
     {
-        fileName: "Image.jpg",
-        fileSize: "4.1 MB",
-        dateUploaded: "2023-06-04",
-        lastUpdated: "2023-06-10",
-        uploadedBy: "Emily Davis"
+        Description: "Image",
+        Size: "4.1 MB",
+        Format: "jpg",
+        Date: "2023-06-04"
     },
     {
-        fileName: "Report.pdf",
-        fileSize: "2.7 MB",
-        dateUploaded: "2023-06-05",
-        lastUpdated: "2023-06-11",
-        uploadedBy: "Michael Wilson"
+        Description: "Report",
+        Size: "2.7 MB",
+        Format: "pdf",
+        Date: "2023-06-05"
     },
     {
-        fileName: "Code.zip",
-        fileSize: "6.3 MB",
-        dateUploaded: "2023-06-06",
-        lastUpdated: "2023-06-12",
-        uploadedBy: "Jennifer Brown"
+        Description: "Code",
+        Size: "6.3 MB",
+        Format: "zip",
+        Date: "2023-06-06"
     },
     {
-        fileName: "Video.mp4",
-        fileSize: "15.2 MB",
-        dateUploaded: "2023-06-07",
-        lastUpdated: "2023-06-13",
-        uploadedBy: "Robert Thompson"
+        Description: "Video",
+        Size: "15.2 MB",
+        Format: "mp4",
+        Date: "2023-06-07"
     },
     {
-        fileName: "Design.png",
-        fileSize: "1.8 MB",
-        dateUploaded: "2023-06-08",
-        lastUpdated: "2023-06-14",
-        uploadedBy: "Jessica Miller"
+        Description: "Design",
+        Size: "1.8 MB",
+        Format: "png",
+        Date: "2023-06-08"
     },
     {
-        fileName: "Proposal.docx",
-        fileSize: "2.1 MB",
-        dateUploaded: "2023-06-09",
-        lastUpdated: "2023-06-15",
-        uploadedBy: "Daniel Taylor"
+        Description: "Proposal",
+        Size: "2.1 MB",
+        Format: "docx",
+        Date: "2023-06-09"
     },
     {
-        fileName: "Document2.docx",
-        fileSize: "2.3 MB",
-        dateUploaded: "2023-06-10",
-        lastUpdated: "2023-06-16",
-        uploadedBy: "Sarah Johnson"
+        Description: "File10",
+        Size: "3.4 MB",
+        Format: "pdf",
+        Date: "2023-06-10"
     },
     {
-        fileName: "Presentation2.pptx",
-        fileSize: "4.7 MB",
-        dateUploaded: "2023-06-11",
-        lastUpdated: "2023-06-17",
-        uploadedBy: "Thomas Brown"
+        Description: "File11",
+        Size: "2.5 MB",
+        Format: "txt",
+        Date: "2023-06-11"
     },
     {
-        fileName: "Spreadsheet2.xlsx",
-        fileSize: "3.5 MB",
-        dateUploaded: "2023-06-12",
-        lastUpdated: "2023-06-18",
-        uploadedBy: "Olivia Davis"
+        Description: "File12",
+        Size: "8.9 MB",
+        Format: "xlsx",
+        Date: "2023-06-12"
     },
     {
-        fileName: "Image2.jpg",
-        fileSize: "6.9 MB",
-        dateUploaded: "2023-06-13",
-        lastUpdated: "2023-06-19",
-        uploadedBy: "Liam Wilson"
+        Description: "File13",
+        Size: "2.3 MB",
+        Format: "docx",
+        Date: "2023-06-13"
     },
     {
-        fileName: "Report2.pdf",
-        fileSize: "3.2 MB",
-        dateUploaded: "2023-06-14",
-        lastUpdated: "2023-06-20",
-        uploadedBy: "haile"
+        Description: "File14",
+        Size: "5.7 MB",
+        Format: "jpg",
+        Date: "2023-06-14"
     },
     {
-        fileName: "Image2.jpg",
-        fileSize: "6.9 MB",
-        dateUploaded: "2023-06-13",
-        lastUpdated: "2023-06-19",
-        uploadedBy: "Liam Wilson"
+        Description: "File15",
+        Size: "1.2 MB",
+        Format: "pdf",
+        Date: "2023-06-15"
     },
     {
-        fileName: "Report2.pdf",
-        fileSize: "3.2 MB",
-        dateUploaded: "2023-06-14",
-        lastUpdated: "2023-06-20",
-        uploadedBy: "haile"
+        Description: "File16",
+        Size: "4.6 MB",
+        Format: "mp3",
+        Date: "2023-06-16"
     },
     {
-        fileName: "Image2.jpg",
-        fileSize: "6.9 MB",
-        dateUploaded: "2023-06-13",
-        lastUpdated: "2023-06-19",
-        uploadedBy: "Liam Wilson"
+        Description: "File17",
+        Size: "3.9 MB",
+        Format: "pptx",
+        Date: "2023-06-17"
     },
     {
-        fileName: "Report2.pdf",
-        fileSize: "3.2 MB",
-        dateUploaded: "2023-06-14",
-        lastUpdated: "2023-06-20",
-        uploadedBy: "haile"
+        Description: "File18",
+        Size: "2.2 MB",
+        Format: "xlsx",
+        Date: "2023-06-18"
     },
-    
-    
+    {
+        Description: "File19",
+        Size: "7.1 MB",
+        Format: "pdf",
+        Date: "2023-06-19"
+    },
+    {
+        Description: "File20",
+        Size: "1.9 MB",
+        Format: "jpg",
+        Date: "2023-06-4"
+    }
 ]
+
 
 const pageHeader = {
     title: 'Policies-and-Strategies',
@@ -141,9 +134,9 @@ function PoliciesAndStrategies() {
     const [page, setpage] = useState(1)
 
     const pageSize = 5
-    const totalPages = Math.floor(fileList.length / pageSize) + 1
+    const totalPages = Math.floor(FileList.length / pageSize) + 1
 
-    const paginatedData = fileList.slice((page - 1) * pageSize, (page - 1) * pageSize + pageSize)
+    const paginatedData = FileList.slice((page - 1) * pageSize, (page - 1) * pageSize + pageSize)
     return (
         <>
             <nav>
@@ -191,8 +184,12 @@ function PoliciesAndStrategies() {
                                             <th scope="col" class="text-white font-semibold py-3.5 px-4 text-sm text-left rtl:text-right dark:text-gray-400">
                                                 <div class="flex items-center gap-x-3">
                                                     {/* <input type="checkbox" class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700"/> */}
-                                                    <span>File name</span>
+                                                    <span>Description</span>
                                                 </div>
+                                            </th>
+
+                                            <th scope="col" class="text-white font-semibold px-12 py-3.5 text-sm text-left rtl:text-right dark:text-gray-400">
+                                                Formate
                                             </th>
 
                                             <th scope="col" class="text-white font-semibold px-12 py-3.5 text-sm text-left rtl:text-right dark:text-gray-400">
@@ -204,21 +201,13 @@ function PoliciesAndStrategies() {
                                             </th>
 
                                             <th scope="col" class="text-white font-semibold px-4 py-3.5 text-sm text-left rtl:text-right dark:text-gray-400">
-                                                Last updated
-                                            </th>
-
-                                            <th scope="col" class="text-white font-semibold px-4 py-3.5 text-sm text-left rtl:text-right dark:text-gray-400">
-                                                Uploaded by
-                                            </th>
-
-                                            <th scope="col" class="relative py-3.5 px-4">
-                                                <span class="sr-only">Edit</span>
+                                                DownLoad
                                             </th>
                                         </tr>
                                     </thead>
                                     <tbody class="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
-                                        {paginatedData.map(p => <tr key={p}>
-                                            <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
+                                        {paginatedData.map(p => <tr key={p} className="hover:bg-neutral-100 transition-all delay-100">
+                                            <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap ">
                                                 <div class="inline-flex items-center gap-x-3">
                                                     {/* <input type="checkbox" class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700"/> */}
                                                     <div class="flex items-center gap-x-2">
@@ -229,25 +218,25 @@ function PoliciesAndStrategies() {
                                                         </div>
 
                                                         <div>
-                                                            <h2 class="font-normal text-gray-800 dark:text-white ">{p.fileName}</h2>
-                                                            {/* <p class="text-xs font-normal text-gray-500 dark:text-gray-400">{p.fileSize}</p> */}
+                                                            <h2 class="font-normal text-gray-800 dark:text-white ">{p.Description}</h2>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="px-12 py-4 text-sm font-normal text-gray-700 whitespace-nowrap">
-                                                {p.fileSize}
+                                                {p.Format}
                                             </td>
-                                            <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">{p.dateUploaded}</td>
-                                            <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">{p.lastUpdated}</td>
-                                            <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">{p.uploadedBy}</td>
-                                            <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                                <button class="px-1 py-1 text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                            <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">{p.Size}</td>
+                                            <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">{p.Date}</td>
+                                            <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap cursor-pointer">
+                                                <a href="">
+                                                    <svg class="h-5 w-5 text-blue-400" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  
+                                                        viewBox="0 0 512 512" enable-background="new 0 0 512 512"  space="preserve">
+                                                        <path d="M442.2,186.2H302.5V0h-93.1v186.2H69.8L256,418.9L442.2,186.2z M0,465.5V512h512v-46.5H0z" />
                                                     </svg>
-                                                </button>
+                                                </a>
                                             </td>
+
                                         </tr>)}
 
                                     </tbody>
@@ -260,7 +249,7 @@ function PoliciesAndStrategies() {
                 <div class="flex items-center justify-center gap-3  mt-6">
 
                     <div class="items-center hidden md:flex gap-x-3 list-none">
-                        <li className={`px-2 py-1 text-sm text-blue-500 rounded-md dark:bg-gray-800 bg-blue-100/60 cursor-pointer ${page === 1 ? 'pointer-events-none':''}`} onClick={()=>setpage(p=>p-1)}>
+                        <li className={`px-2 py-1 text-sm text-blue-500 rounded-md dark:bg-gray-800 bg-blue-100/60 cursor-pointer ${page === 1 ? 'pointer-events-none' : ''}`} onClick={() => setpage(p => p - 1)}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 class="h-3 w-3"
@@ -275,7 +264,7 @@ function PoliciesAndStrategies() {
                             </svg>
                         </li>
                         {Array.from(Array(totalPages).keys()).map((num) => num + 1).map(pg => <li onClick={() => setpage(p => pg)} className={`px-2 py-1 text-sm text-blue-500 rounded-md dark:bg-gray-800 bg-blue-100/60 cursor-pointer ${page === pg ? 'bg-neutral-800 text-white' : ''}`} >{pg}</li>)}
-                        <li className={`px-2 py-1 text-sm text-blue-500 rounded-md dark:bg-gray-800 bg-blue-100/60 cursor-pointer ${page === totalPages ? 'pointer-events-none':''}`} onClick={()=>setpage(p=>p+1)}>
+                        <li className={`px-2 py-1 text-sm text-blue-500 rounded-md dark:bg-gray-800 bg-blue-100/60 cursor-pointer ${page === totalPages ? 'pointer-events-none' : ''}`} onClick={() => setpage(p => p + 1)}>
                             <span class="sr-only">Next Page</span>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -300,4 +289,3 @@ function PoliciesAndStrategies() {
 
 export default PoliciesAndStrategies
 
-   

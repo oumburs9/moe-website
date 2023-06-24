@@ -22,6 +22,9 @@ import VideoGallery from './views/Media/gallery/video-gallery';
 import ImageGallery from './views/Media/gallery/image-gallery';
 import VideoDetails from './views/Media/gallery/video-details';
 import JobVacancies from './views/announcements/job-vacancies';
+import GuidlinesAndStandards from './views/Resources/guidelines-and-standards';
+import PlansAndReports from './views/Resources/plans-and-reports';
+import AnnualAbstract from './views/Resources/annual-abstract';
 
 
 
@@ -120,7 +123,21 @@ const router = createBrowserRouter([
             {
                 path:"/announcement/job-vacancy",
                 element:<JobVacancies/>
-            }
+            },
+            //resource
+            {
+                path:'/resource/guidlinesandstandards',
+                element:<GuidlinesAndStandards/>
+            },
+            {
+                path:'/resource/plansandreports',
+                element:<PlansAndReports/>
+            },
+            {
+                path:'/resource/annualabstracts',
+                element:<AnnualAbstract/>
+            },
+            
         //add other routes
         ],
     },  
