@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Side from "../../components/side.component"
+import Breadcrumb from "../../components/breadcrumb.component"
 
 const newsData = [
     {
@@ -18,20 +19,12 @@ const newsData = [
 
 function DetailNews (){
     const [detailData] = useState(0)
+    const title = newsData[detailData].title
+    const path = [{name: 'Home', link: ''},{name: 'News', link: ''},{name: title, link: ''}]
     return (
         <>
             <nav>
-                <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
-                    <li className='flex gap-2'>
-                        <a href="#">Home</a>
-                        <span>{">"}</span>
-                    </li>
-                    <li className='flex gap-2'>
-                        <a href="#">News</a>
-                        <span>{">"}</span>
-                    </li>
-                    <li>{newsData[detailData].title}</li>
-                </ol>
+                <Breadcrumb path={path} />
             </nav>
             <div className="grid md:grid-cols-4 bg-white p-8 gap-5 text-[#21618c] my-[.67em]">
                 <div className="md:col-span-3 pr-4 flex flex-col gap-5">

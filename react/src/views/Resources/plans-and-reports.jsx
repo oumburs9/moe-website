@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Titles from "../../components/title.component"
 import { FileList } from "./policies-and-strategies"
+import Breadcrumb from "../../components/breadcrumb.component"
 
 const pageHeader = {
     title:'Plans And Reports',
@@ -8,6 +9,7 @@ const pageHeader = {
 }
 function PlansAndReports() {
 
+    const path = [{name: 'Home', link: ''},{name:'Plans-And-Reports'}]
     const [page, setpage] = useState(1)
 
     const pageSize = 5
@@ -17,15 +19,7 @@ function PlansAndReports() {
     return (
         <>
             <nav>
-                <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
-                    <li className='flex gap-2'>
-                        <a href="#">Home</a>
-                        <span>{">"}</span>
-                    </li>
-                    <li>Resources</li>
-                    <span>{">"}</span>
-                    <li>Policies-and-Strategies</li>
-                </ol>
+                <Breadcrumb path={path} />
             </nav>
             <div class="container px-4 mx-auto">
                 <div class="sm:flex sm:items-center sm:justify-between p-4">

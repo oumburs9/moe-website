@@ -1,6 +1,7 @@
 import { FileList } from "./policies-and-strategies"
 import { useState } from "react"
 import Titles from "../../components/title.component"
+import Breadcrumb from "../../components/breadcrumb.component"
 
 const pageHeader = {
     title:'GuidLines and standards',
@@ -8,6 +9,7 @@ const pageHeader = {
 }
 function GuidlinesAndStandards() {
 
+    const path = [{name: 'Home', link: ''},{name: 'GuidLines-and-Standards'}]
     const [page, setpage] = useState(1)
 
     const pageSize = 5
@@ -17,15 +19,7 @@ function GuidlinesAndStandards() {
     return (
         <>
             <nav>
-                <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
-                    <li className='flex gap-2'>
-                        <a href="#">Home</a>
-                        <span>{">"}</span>
-                    </li>
-                    <li>Resources</li>
-                    <span>{">"}</span>
-                    <li>Guids and standards</li>
-                </ol>
+                <Breadcrumb path={path} />
             </nav>
             <div class="container px-4 mx-auto">
                 <div class="sm:flex sm:items-center sm:justify-between p-4">

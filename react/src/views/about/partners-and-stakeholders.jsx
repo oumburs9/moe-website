@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Side from '../../components/side.component'
 import Titles from '../../components/title.component'
+import Breadcrumb from '../../components/breadcrumb.component'
 
 const partnersData = [
     {
@@ -197,19 +198,13 @@ const PageHeader = {
 }
 
 function PartnersAndStakeholders() {
-
-    const [item] = useState(0)
+    
+    const path = [{name: 'Home', link: ''},{name: 'Partners-and-Stakehokders'}]
 
     return(
         <>
             <nav>
-                <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
-                    <li className='flex gap-2'>
-                        <a href="#">Home</a>
-                        <span>{">"}</span>
-                    </li>
-                    <li>Partners-and-Stakeholders</li>
-                </ol>
+                <Breadcrumb path={path} />
             </nav>
             <div className="grid md:grid-cols-3 bg-white p-20 gap-5 text-[#156584] my-[.67em]">
                 <div className="md:col-span-2 pr-4">

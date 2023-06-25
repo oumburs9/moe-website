@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Card from "../../../components/video-details.component"
+import Breadcrumb from "../../../components/breadcrumb.component";
 
 const videoData = [
     {
@@ -70,20 +71,12 @@ const videoData = [
 
 function VideoDetails() {
     const [detailData] = useState(3)
+    const video = videoData[detailData].title
+    const path = [{name: 'Home', link: ''},{name: 'Gallery'},{name:'Video Gallery'},{name: video, link: ''}]
     return (
         <>
             <nav>
-                <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
-                    <li className='flex gap-2'>
-                        <a href="#">Home</a>
-                        <span>{">"}</span>
-                    </li>
-                    <li className='flex gap-2'>
-                        <a href="#">Videos</a>
-                        <span>{">"}</span>
-                    </li>
-                    <li>{videoData[detailData].title}</li>
-                </ol>
+                <Breadcrumb path={path} />
             </nav>
             <div className="grid md:grid-cols-7 bg-white p-8 pr-0 gap-4 text-[#21618c] my-[.67em]">
                 <div className="md:col-span-5 pr-4 flex flex-col gap-5">

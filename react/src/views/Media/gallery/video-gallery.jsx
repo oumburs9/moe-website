@@ -1,6 +1,7 @@
 import React from "react";
 import Titles from '../../../components/title.component';
 import Card from '../../../components/video-card.component';
+import Breadcrumb from "../../../components/breadcrumb.component";
 
 const VideoGallery = () => {
     const videoData = [
@@ -75,23 +76,13 @@ const VideoGallery = () => {
         subtitle: 'This is a sample subtitle.',
     };
 
+    const path = [{name: 'Home', link: ''},{name: 'Gallery'},{name:'Video Gallery'}]
+
 
     return (
         <>
             <nav>
-                <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
-                    <li className='flex gap-2'>
-                        <a href="#">Home</a>
-                        <span>{">"}</span>
-                    </li>
-                    <li className='flex gap-2'>
-                        <p>Gallery</p>
-                        <span>{">"}</span>
-                    </li>
-                    <li className=''>
-                        <p>{header.title}</p>
-                    </li>
-                </ol>
+                <Breadcrumb path={path} />
             </nav>
             <div className="px-4 mt-12 mx-auto sm:px-6 lg:px-8 container">
                 <Titles title={header.title} subtitle={header.subtitle} />

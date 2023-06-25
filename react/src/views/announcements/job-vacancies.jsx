@@ -1,3 +1,4 @@
+import Breadcrumb from "../../components/breadcrumb.component";
 import Titles from "../../components/title.component"
 
 const pageHeader = {
@@ -50,9 +51,12 @@ const JobVacancyCard = ({ role, shortdescription, detail, link }) => {
     </div>
 }
 function JobVacancies() {
-    // console.log(vaca)
+    const path = [{name: 'Home', link: ''},{name: 'Job-Vacancies'}]
     return (
         <>
+            <nav>
+                <Breadcrumb path={path} />
+            </nav>
             <div className="flex flex-col bg-white p-20">
                 <Titles title={pageHeader.title} subtitle={pageHeader.subtitle} />
                 {jobVacancies.map(jobs => <JobVacancyCard role={jobs.Role} shortdescription={jobs.ShortDescription} detail={jobs.DetailDescription} link={jobs.RegistrationLink} />)

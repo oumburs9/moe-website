@@ -1,3 +1,4 @@
+import Breadcrumb from '../../components/breadcrumb.component'
 import Side from '../../components/side.component'
 import Titles from '../../components/title.component'
 
@@ -45,16 +46,11 @@ const contents = [
 ]
 
 function Mission() {
+  const path = [{name: 'Home', link: ''},{name: 'Mission-and-Vision'}]
   return (
     <>
       <nav>
-        <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
-          <li className='flex gap-2'>
-            <a href="#">Home</a>
-            <span>{">"}</span>
-          </li>
-          <li>Mission-and-Vision</li>
-        </ol>
+        <Breadcrumb path={path} />
       </nav>
       <div className="grid md:grid-cols-3 bg-white p-20 gap-5 text-[#156584] my-[.67em]">
         <div className="md:col-span-2 pr-4">

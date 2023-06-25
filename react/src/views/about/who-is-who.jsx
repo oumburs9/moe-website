@@ -3,6 +3,7 @@ import * as SomeModule from 'react-icons/fa';
 import * as SomeModule2 from 'react-icons/bs';
 import { useState } from 'react';
 import Titles from '../../components/title.component';
+import Breadcrumb from '../../components/breadcrumb.component';
 export const data = [
     {
         id:0,
@@ -706,31 +707,22 @@ export const PeopleUnder = ({data,action}) => {
 
 }
 
+const header = {
+    title: 'Who is Who',
+    subtitle: 'Who is Who at MoE'
+}
+
+
 function WhoIsWho() {
 
     const [profileData, setProfileData] = useState(0)
-
-    const header = {
-        title: 'Who is Who',
-        subtitle: 'Who is Who at MoE'
-    }
+    const name = data[profileData].name
+    const path = [{name: 'Home', link: ''},{name: 'Who-is-Who', link: ''},{name: name, link: ''}]
 
     return (
         <>
             <nav>
-                <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
-                    <li className='flex gap-2'>
-                        <a href="#">Home</a>
-                        <span>{">"}</span>
-                    </li>
-                    <li className='flex gap-2'>
-                        <p>Who-is-Who</p>
-                        <span>{">"}</span>
-                    </li>
-                    <li className=''>
-                        <p>{data[profileData].name}</p>
-                    </li>
-                </ol>
+                <Breadcrumb path={path} />
             </nav>
             <div className='p-20'>
                 <Titles title={header.title} subtitle={header.subtitle} />
