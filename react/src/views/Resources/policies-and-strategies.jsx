@@ -135,7 +135,7 @@ function PoliciesAndStrategies() {
     const [page, setpage] = useState(1)
     const path = [{name: 'Home', link: ''},{name:'Policies-and-Strategies'}]
 
-    const pageSize = 5
+    const pageSize = 8
     const totalPages = Math.floor(FileList.length / pageSize) + 1
 
     const paginatedData = FileList.slice((page - 1) * pageSize, (page - 1) * pageSize + pageSize)
@@ -145,9 +145,10 @@ function PoliciesAndStrategies() {
                 <Breadcrumb path={path} />
             </nav>
             <div class="container px-4 mx-auto">
-                <div class="sm:flex sm:items-center sm:justify-between p-4">
+                <div className="py-10">
                     <Titles title={pageHeader.title} subtitle={pageHeader.subheader} />
-
+                </div>
+                <div class="flex justify-end py-4 px-8 mt-6">
                     <div class="flex items-center mt-4 gap-x-3">
                         <button class="w-1/2 px-5 py-2 text-sm text-gray-800 transition-colors duration-200 bg-white border rounded-lg sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-white dark:border-gray-700">
                             Download all
@@ -179,7 +180,6 @@ function PoliciesAndStrategies() {
                                         <tr>
                                             <th scope="col" class="text-white font-semibold py-3.5 px-4 text-sm text-left rtl:text-right dark:text-gray-400">
                                                 <div class="flex items-center gap-x-3">
-                                                    {/* <input type="checkbox" class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700"/> */}
                                                     <span>Description</span>
                                                 </div>
                                             </th>
@@ -205,7 +205,6 @@ function PoliciesAndStrategies() {
                                         {paginatedData.map(p => <tr key={p} className="hover:bg-neutral-100 transition-all delay-100">
                                             <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap ">
                                                 <div class="inline-flex items-center gap-x-3">
-                                                    {/* <input type="checkbox" class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700"/> */}
                                                     <div class="flex items-center gap-x-2">
                                                         <div class="flex items-center justify-center w-8 h-8 text-blue-500 bg-blue-100 rounded-full dark:bg-gray-800">
                                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -222,9 +221,9 @@ function PoliciesAndStrategies() {
                                             <td class="px-12 py-4 text-sm font-normal text-gray-700 whitespace-nowrap">
                                                 {p.Format}
                                             </td>
-                                            <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">{p.Size}</td>
+                                            <td class="px-12 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">{p.Size}</td>
                                             <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">{p.Date}</td>
-                                            <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap cursor-pointer">
+                                            <td class="pr-4 pl-10 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap cursor-pointer">
                                                 <a href="">
                                                     <svg class="h-5 w-5 text-blue-400" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  
                                                         viewBox="0 0 512 512" enable-background="new 0 0 512 512"  space="preserve">
