@@ -116,7 +116,7 @@ const router = createBrowserRouter([
                 element:<VideoGallery/>
             },
             {
-                path:"/media/gallery/videos/id",
+                path:"/media/gallery/videos/:id",
                 element:<VideoDetails/>
             },
             // announcement
