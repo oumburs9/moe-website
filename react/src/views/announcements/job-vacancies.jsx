@@ -27,11 +27,11 @@ const jobVacancies = [
     }
 ];
 
-const JobVacancyCard = ({ role, shortdescription, detail, link }) => {
+export const AnnouncementCard = ({ title, shortdescription, detail, link,linkTitle }) => {
 
-    return <div key={role} className="flex flex-col p-3 mt-20 shadow-2xl rounded-xl">
+    return <div key={title} className="flex flex-col p-3 mt-20 shadow-2xl rounded-xl">
         <h1 className="text-blue-500 text-xl font-bold capitalize p-3">
-            {role}
+            {title}
         </h1>
         <div className="flex flex-col m-4 items-center justify-center bg-white">
             <h2 className="text-blue-500 font-bold text-lg underline lead-6 capitalize">
@@ -44,7 +44,7 @@ const JobVacancyCard = ({ role, shortdescription, detail, link }) => {
             </div>
             <div className="p-4 list-none ">
                 <a href={link} className="text-blue-400 hover:text-green hover:underline">
-                    Register Here
+                    {linkTitle}
                 </a>
             </div>
         </div>
@@ -59,7 +59,7 @@ function JobVacancies() {
             </nav>
             <div className="flex flex-col bg-white p-20">
                 <Titles title={pageHeader.title} subtitle={pageHeader.subtitle} />
-                {jobVacancies.map(jobs => <JobVacancyCard role={jobs.Role} shortdescription={jobs.ShortDescription} detail={jobs.DetailDescription} link={jobs.RegistrationLink} />)
+                {jobVacancies.map(jobs => <AnnouncementCard title={jobs.Role} shortdescription={jobs.ShortDescription} detail={jobs.DetailDescription} link={jobs.RegistrationLink} linkTitle={"Register Here"}/>)
                 }
             </div>
         </>

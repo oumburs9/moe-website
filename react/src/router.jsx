@@ -25,6 +25,8 @@ import JobVacancies from './views/announcements/job-vacancies';
 import GuidlinesAndStandards from './views/Resources/guidelines-and-standards';
 import PlansAndReports from './views/Resources/plans-and-reports';
 import AnnualAbstract from './views/Resources/annual-abstract';
+import Notices from './views/announcements/notices';
+import Tender from './views/announcements/tender';
 
 
 
@@ -123,6 +125,14 @@ const router = createBrowserRouter([
             {
                 path:"/announcement/job-vacancy",
                 element:<JobVacancies/>
+            },
+            {
+                path:"/announcement/notices",
+                element:<Notices/>
+            },
+            {
+                path:"/announcement/tender",
+                element:<Tender/>
             },
             //resource
             {
