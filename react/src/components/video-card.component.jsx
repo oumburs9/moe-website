@@ -17,16 +17,16 @@ export const Card = ({ data }) => {
 
   return (
     <>
-      <div className="group" onClick={() => window.location.reload()}>
-        <Link to={`/media/gallery/videos/${id}`} >
+      <div className="group" onClick={() => window.location.reload()} >
+        <Link  to={`/media/gallery/videos/${id}`} >
 
-          <div className="relative block aspect-w-4 aspect-h-3 overflow-hidden group-hover:drop-shadow-md rounded" onClick={()=>window.location.reload()}>
+          <div className="relative block aspect-w-4 aspect-h-3 overflow-hidden group-hover:drop-shadow-md rounded" >
             <video className="object-cover sm:h-52 w-full h-full group-hover:scale-125 transition-transform delay-0">
               <source src={videoSrc} type="video/mp4" />
             </video>
             {
               category !== '' ? (
-                <span className={`absolute bottom-3 top-auto left-3 inline-flex items-center px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-xl text-white bg-[${randomColor}]`}>
+                <span className={`absolute bottom-3 top-auto left-3 inline-flex items-center px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-xl text-white bg-[${randomColor}] pointer-events-none cursor-text`}>
                   {category}
                 </span>) : ''
             }
@@ -34,7 +34,7 @@ export const Card = ({ data }) => {
 
         </Link>
 
-        <p className="mt-6 text-lg font-semibold">
+        <p className="mt-6 text-lg font-semibold pointer-events-none">
           <div className="text-dark transition-colors group-hover:text-blue line-clamp-2 pb-1 border-b-2 border-light/40 border-dashed">
             {title || 'No Title/Description'}
           </div>

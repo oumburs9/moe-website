@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 export const Card = ({ data }) => {
 
 
     const colors = ['#F8BE15','#D1503E','#3C8FC2','#1F48A2'];
     const randomColor = colors[Math.floor(Math.random()*colors.length)];
-    const { image='', views='', link = '', paragraph='', title='', category='', date='' } = data;
+    const { id,image='', views='', link = '', paragraph='', title='', category='', date='' } = data;
   
     let viewsCount = views;
     if (views > 1000) {
@@ -15,29 +17,15 @@ export const Card = ({ data }) => {
   
     return (
       <>
-        <div className="group">
-          <a
-            href={link}
-            title=""
-            target="_blank"
-            className="relative block aspect-w-4 aspect-h-3 overflow-hidden group-hover:drop-shadow-md rounded"
-          >
-            <img
-              className="object-cover sm:h-52 w-full h-full group-hover:scale-125 transition-transform delay-0"
-              src={image}
-              alt=""
-            />
+        <div className="group" onClick={() => window.location.reload()} >
+          <Link to={`/media/news/${id}`} className="relative block aspect-w-4 aspect-h-3 overflow-hidden group-hover:drop-shadow-md rounded">
+            <img className="object-cover sm:h-52 w-full h-full group-hover:scale-125 transition-transform delay-0" src={image} alt="" />
             {
               category !== '' ? (
-            <span
-             className={`absolute bottom-3 top-auto left-3 inline-flex items-center px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-xl text-white bg-[${randomColor}]`}
-            >
+            <span className={`absolute bottom-3 top-auto left-3 inline-flex items-center px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-xl text-white bg-[${randomColor}]`}>
               {category}
-            </span>
-
-              ):''
-            }
-          </a>
+            </span> ):''}
+          </Link>
   
           <p className="mt-6 text-lg font-semibold">
             <a

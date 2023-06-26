@@ -104,7 +104,7 @@ const router = createBrowserRouter([
                 element:<Magazines/>
             },
             {
-                path:"/media/news/id",
+                path:"/media/news/:id",
                 element:<DetailNews/>
             },
             {
