@@ -43,11 +43,10 @@ function OrganizationalStructure() {
                                     <div className='flex flex-col'>
                                         <div className='flex justify-center'><span className='h-10 w-1 bg-black'></span></div>
                                         <div className={index%2==0 ?'flex justify-start':'flex justify-end'}><h3 className='p-2 h-min text-sm bg-white shadow-lg hover:shadow-md'>{getPerson(i).department}</h3></div>
-                                        <div className={index%2==0 ?'flex justify-start':'flex justify-end'} ><span className='h-10 w-[2px] bg-[#3C8FC3]'></span></div>
+                                        <div className={index%2==0 ?'flex justify-start':'flex justify-end'} ><span className={`h-10 w-[2px] ${getPerson(id).department == 'General Education Development Sector' ? 'bg-[#3C8FC3]':'bg-[#2048A1]'}`}></span></div>
                                     </div>
-
                                     {getPerson(i).peoplesUnder.map((j)=>
-                                    <div className={index%2==0 ?'border-l-2 border-[#3C8FC3]':'border-r-2 border-[#3C8FC3]'}>
+                                    <div className={`${index%2==0 ?'border-l-2':'border-r-2'} ${getPerson(id).department == 'General Education Development Sector' ? 'border-[#3C8FC3]':'border-[#2048A1]'}`}>
                                         <div className='flex flex-col mb-1'>
                                             <div className='flex items-center'>
                                                 <span className={index%2==0 ?'h-1 w-3 bg-black':'hidden'}></span>
