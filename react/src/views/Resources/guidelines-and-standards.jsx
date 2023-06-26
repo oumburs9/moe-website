@@ -21,7 +21,17 @@ function GuidlinesAndStandards() {
             <nav>
                 <Breadcrumb path={path} />
             </nav>
-            <div class="container px-4 mx-auto">
+            <ResoucesTable paginatedData={paginatedData} totalPages={totalPages} setpage={setpage} page={page} pageHeader={pageHeader}/>
+
+        </>
+    )
+}
+
+export default GuidlinesAndStandards
+
+export const ResoucesTable = ({paginatedData,pageHeader,totalPages,setpage,page})=>{
+    return (
+        <div class="container px-4 mx-auto">
                 <div class="sm:flex sm:items-center sm:justify-between p-4">
                     <Titles title={pageHeader.title} subtitle={pageHeader.subtitle} />
 
@@ -155,9 +165,5 @@ function GuidlinesAndStandards() {
                     </div>
                 </div>
             </div>
-
-        </>
     )
 }
-
-export default GuidlinesAndStandards
