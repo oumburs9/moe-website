@@ -125,10 +125,10 @@ function PlansAndReports() {
                     </div>
                 </div>
 
-                <div class="flex items-center justify-center gap-3  mt-6">
+                <div class="flex items-center justify-center gap-3  mt-[5%]">
 
                     <div class="items-center hidden md:flex gap-x-3 list-none">
-                        <li className={`px-2 py-1 text-sm text-blue-500 rounded-md dark:bg-gray-800 bg-blue-100/60 cursor-pointer ${page === 1 ? 'pointer-events-none' : ''}`} onClick={() => setpage(p => p - 1)}>
+                        <li className={`px-2 py-1 text-sm text-blue-500 rounded-md dark:bg-gray-800 bg-blue-100/60 cursor-pointer ${page === 1 ? 'pointer-events-none' : 'text-blue-950'}`} onClick={() => setpage(p => p - 1)}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 class="h-3 w-3"
@@ -142,9 +142,10 @@ function PlansAndReports() {
                                 />
                             </svg>
                         </li>
-                        {Array.from(Array(totalPages).keys()).map((num) => num + 1).map(pg => <li onClick={() => setpage(p => pg)} className={`px-2 py-1 text-sm text-blue-500 rounded-md dark:bg-gray-800 bg-blue-100/60 cursor-pointer ${page === pg ? 'bg-neutral-800 text-white' : ''}`} >{pg}</li>)}
-                        <li className={`px-2 py-1 text-sm text-blue-500 rounded-md dark:bg-gray-800 bg-blue-100/60 cursor-pointer ${page === totalPages ? 'pointer-events-none' : ''}`} onClick={() => setpage(p => p + 1)}>
-                            <span class="sr-only">Next Page</span>
+                        {Array.from(Array(totalPages).keys()).map((num) => num + 1).map(pg => <li onClick={() => setpage(p => pg)} className={`flex items-center justify-center text-sm  w-7 h-7 rounded-full transition-all ease-in delay-150 dark:bg-gray-800 bg-blue-100/60 cursor-pointer ${page === pg ? 'bg-neutral-800 text-white' : 'text-blue-950'}`} >{pg}</li>
+                        )}
+                        <li className={`px-2 py-1 text-sm text-blue-500 rounded-md dark:bg-gray-800 bg-blue-100/60 cursor-pointer ${page === totalPages ? 'pointer-events-none' : 'text-blue-950'}`} onClick={() => setpage(p => p + 1)}>
+                            <span className="sr-only">Next Page</span>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 class="h-3 w-3"
@@ -158,6 +159,7 @@ function PlansAndReports() {
                                 />
                             </svg>
                         </li>
+                        
                     </div>
                 </div>
             </div>
