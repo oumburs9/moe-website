@@ -136,7 +136,7 @@ function PoliciesAndStrategies() {
     const path = [{name: 'Home', link: ''},{name:'Policies-and-Strategies'}]
 
     const pageSize = 8
-    const totalPages = Math.floor(FileList.length / pageSize) + 1
+    const totalPages = FileList.length%pageSize != 0 ? Math.floor(FileList.length / pageSize) + 1 : Math.floor(FileList.length / pageSize)
 
     const paginatedData = FileList.slice((page - 1) * pageSize, (page - 1) * pageSize + pageSize)
     return (

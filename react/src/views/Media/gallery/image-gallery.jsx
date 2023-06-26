@@ -1,58 +1,36 @@
 import Breadcrumb from '../../../components/breadcrumb.component'
-import Side from '../../../components/side.component'
 import Titles from '../../../components/title.component'
 
 const imageData = [
     {
-        id:'item-1',
-        imageSrc:'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg',
-        carousel:'active'
-    },
-    {
-        id:'item-2',
-        imageSrc:'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg',
-    },
-    {
-        id:'item-3',
-        imageSrc:'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg',
-    },
-    {
-        id:'item-4',
-        imageSrc:'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg',
-    },
-    {
-        id:'item-5',
-        imageSrc:'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg',
-    }
-]
-
-const videoData = [
-    {
         id:1,
+        fileName: 'shoes image',
         imageSrc:'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg',
-        videoSrc:''
+        
     },
     {
         id:2,
+        fileName: 'shoes image',
         imageSrc:'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg',
-        videoSrc:''
     },
     {
         id:3,
+        fileName: 'shoes image',
         imageSrc:'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg',
-        videoSrc:''
     },
     {
         id:4,
+        fileName: 'shoes image',
         imageSrc:'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg',
-        videoSrc:''
     },
     {
         id:5,
+        fileName: 'shoes image',
         imageSrc:'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg',
-        videoSrc:''
+        description: ''
     }
 ]
+
 
 const header = {
     title: 'Image Gallery',
@@ -75,10 +53,10 @@ function ImageGallery() {
                 <div className="md:col-span-4 pr-4">
                     <div className="grid gap-4">
                         <div>
-                            <div id="gallery" className="relative w-full" data-carousel="slide">
+                            <div id="gallery" className="relative w-full">
                                 <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                                     {imageData.map((item) => (
-                                        <div id={item.id} className="duration-700 ease-in-out" data-carousel-item={item.carousel}>
+                                        <div className="duration-700 ease-in-out">
                                             <img src={item.imageSrc} className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
                                         </div>
                                     ))}
@@ -97,7 +75,7 @@ function ImageGallery() {
                                 </button>
                             </div>
                         </div>
-                        <div class="grid grid-cols-4 gap-4">
+                        <div class="grid grid-cols-3 gap-4">
                             {imageData.map((item) => (
                                 <div>
                                     <img class="h-auto max-w-full rounded-lg" src={item.imageSrc} alt=""/>
@@ -121,9 +99,6 @@ function ImageGallery() {
                         </div>
                     </div>
                 </div>
-                {/* <div className="md:col-span-1 pl-4">
-                    <Side/>
-                </div> */}
             </div>
         </>
     )

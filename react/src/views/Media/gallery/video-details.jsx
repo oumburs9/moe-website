@@ -1,8 +1,6 @@
-import { useState } from "react"
-// import Card from "../../../components/video-details.component"
 import Breadcrumb from "../../../components/breadcrumb.component";
 import { videoData } from "./video-gallery";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Card from "../../../components/video-card.component";
 
 function VideoDetails() {
@@ -33,9 +31,12 @@ function VideoDetails() {
                 </div>
                 <div className="md:col-span-2 md:pt-14">
                     <div className="flex flex-col gap-5">
-                        {videoData.map((jsonData) => (
+                        {videoData.slice(0, 6).map((jsonData) => (
                             <Card data={jsonData} />
                         ))}
+                        <Link to={'/media/gallery/videos'}>
+                            <button className="bg-[#21618c] text-white py-3 px-6 rounded-sm shadow-blue-200 shadow-md"><strong>VIEW ALL</strong></button>
+                        </Link>
                     </div>
                 </div>
             </div>
