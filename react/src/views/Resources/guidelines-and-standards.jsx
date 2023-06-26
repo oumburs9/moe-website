@@ -13,15 +13,25 @@ function GuidlinesAndStandards() {
     const [page, setpage] = useState(1)
 
     const pageSize = 5
-    const totalPages = Math.floor(FileList.length / pageSize) + 1
+    const totalPages = FileList.length%pageSize !== 0 ? Math.floor(FileList.length / pageSize) + 1:Math.floor(FileList.length / pageSize)
 
-    const paginatedData = FileList.slice((page - 1) * pageSize, (page - 1) * pageSize + pageSize)
+    const paginatedData =  FileList.slice((page - 1) * pageSize, (page - 1) * pageSize + pageSize)
     return (
         <>
             <nav>
                 <Breadcrumb path={path} />
             </nav>
-            <div class="container px-4 mx-auto">
+            <ResoucesTable paginatedData={paginatedData} totalPages={totalPages} setpage={setpage} page={page} pageHeader={pageHeader}/>
+
+        </>
+    )
+}
+
+export default GuidlinesAndStandards
+
+export const ResoucesTable = ({paginatedData,pageHeader,totalPages,setpage,page})=>{
+    return (
+        <div class="container px-4 mx-auto">
                 <div class="sm:flex sm:items-center sm:justify-between p-4">
                     <Titles title={pageHeader.title} subtitle={pageHeader.subtitle} />
 
@@ -99,9 +109,9 @@ function GuidlinesAndStandards() {
                                             <td class="px-12 py-4 text-sm font-normal text-gray-700 whitespace-nowrap">
                                                 {p.Format}
                                             </td>
-                                            <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">{p.Size}</td>
+                                            <td class="px-12 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">{p.Size}</td>
                                             <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">{p.Date}</td>
-                                            <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap cursor-pointer">
+                                            <td class="pl-10 pr-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap cursor-pointer">
                                                 <a href="">
                                                     <svg class="h-5 w-5 text-blue-400" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  
                                                         viewBox="0 0 512 512" enable-background="new 0 0 512 512"  space="preserve">
@@ -155,9 +165,5 @@ function GuidlinesAndStandards() {
                     </div>
                 </div>
             </div>
-
-        </>
     )
 }
-
-export default GuidlinesAndStandards
