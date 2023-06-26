@@ -1,16 +1,14 @@
 import { images } from '../../assets'
+import Breadcrumb from '../../components/breadcrumb.component'
 export const ContactUs = () => {
 
+    const path = [{name: 'Home', link: ''},{name: 'Contact Us'}]
+
     return (
-        <><nav>
-            <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
-                <li className='flex gap-2'>
-                    <a href="#">Home</a>
-                    <span>{">"}</span>
-                </li>
-                <li>Contact Us</li>
-            </ol>
-        </nav>
+        <>
+            <nav>
+                <Breadcrumb path={path} />
+            </nav>
             <div className="flex flex-col mt-4">
 
                 <iframe style={{ height: "70vh", width: "100%", border: 0, padding: '10px' }} src="https://www.google.com/maps/embed/v1/place?q=Ministry+of+Education,+Constitution+Road,+Bridgetown,+Barbados&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>

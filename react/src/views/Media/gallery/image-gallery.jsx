@@ -1,3 +1,4 @@
+import Breadcrumb from '../../../components/breadcrumb.component'
 import Side from '../../../components/side.component'
 import Titles from '../../../components/title.component'
 
@@ -53,23 +54,19 @@ const videoData = [
     }
 ]
 
+const header = {
+    title: 'Image Gallery',
+    subtitle: 'this is sample subtitle'
+}
+
 function ImageGallery() {
 
-    const header = {
-        title: 'Image Gallery',
-        subtitle: 'this is sample subtitle'
-    }
+    const path = [{name: 'Home', link: ''},{name: 'Gallery'},{name:'Image Gallery'}]
 
     return(
         <>
             <nav>
-                <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
-                    <li className='flex gap-2'>
-                        <a href="#">Home</a>
-                        <span>{">"}</span>
-                    </li>
-                    <li>Gallery</li>
-                </ol>
+                <Breadcrumb path={path} />
             </nav>
             <div className='p-10'>
                 <Titles title={header.title} subtitle={header.subtitle} />

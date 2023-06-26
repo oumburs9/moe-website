@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Titles from '../../components/title.component'
 import { data } from './who-is-who'
+import Breadcrumb from '../../components/breadcrumb.component'
 
 const header = {
     title: 'Organizational Structure',
@@ -8,6 +9,7 @@ const header = {
 }
 
 function OrganizationalStructure() {
+    const path = [{name: 'Home', link: ''},{name: 'Organizational-Structure'}]
     const minister = data.filter(d => d.id === 0 )[0]
     const getPerson = (id)=>{
         return data.filter(p=>p.id === id)[0]
@@ -16,13 +18,7 @@ function OrganizationalStructure() {
     return (
         <>
             <nav>
-                <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
-                    <li className='flex gap-2'>
-                        <a href="#">Home</a>
-                        <span>{">"}</span>
-                    </li>
-                    <li>Organizational-Structure</li>
-                </ol>
+                <Breadcrumb path={path} />
             </nav>
             <div className="px-4 mt-12 mx-auto sm:px-6 lg:px-8 container">
                 <Titles title={header.title} subtitle={header.subtitle} />

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Titles from "../../components/title.component"
+import Breadcrumb from "../../components/breadcrumb.component"
 
 export const FileList = [
     {
@@ -132,6 +133,7 @@ const pageHeader = {
 function PoliciesAndStrategies() {
 
     const [page, setpage] = useState(1)
+    const path = [{name: 'Home', link: ''},{name:'Policies-and-Strategies'}]
 
     const pageSize = 5
     const totalPages = Math.floor(FileList.length / pageSize) + 1
@@ -140,13 +142,7 @@ function PoliciesAndStrategies() {
     return (
         <>
             <nav>
-                <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
-                    <li className='flex gap-2'>
-                        <a href="#">Home</a>
-                        <span>{">"}</span>
-                    </li>
-                    <li>Policies-and-Strategies</li>
-                </ol>
+                <Breadcrumb path={path} />
             </nav>
             <div class="container px-4 mx-auto">
                 <div class="sm:flex sm:items-center sm:justify-between p-4">

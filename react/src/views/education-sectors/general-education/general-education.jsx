@@ -4,6 +4,7 @@ import { useSelector,useDispatch } from 'react-redux';
 import Card from '../../../components/education-card.componet';
 import { fetchGeneralEducations } from '../../../redux/education/generalEducationSlice';
 import Spinner from '../../../components/base/spinner';
+import Breadcrumb from '../../../components/breadcrumb.component';
 
 const GeneralEducation = () => {
 
@@ -187,17 +188,12 @@ const GeneralEducation = () => {
       // const data = translationsGeneralEducations[selectedLanguage];
       // const englishEducations = educations[0]?.english || [];
       const data = generalEducations[0]?.[selectedLanguage] || [];
+      const path = [{name: 'Home', link: ''},{name: 'General-Education'}]
       return (
         <>
         <nav>
-          <ol className="bg-gray-100 flex gap-2 justify-end p-5 text-sm text-[#156584]">
-            <li className='flex gap-2'>
-              <a href="#">Home</a>
-              <span>{">"}</span>
-            </li>
-            <li>General-Education</li>
-          </ol>
-        </nav>
+          <Breadcrumb path={path} />
+      </nav>
         <div>
             <div className='flex pl-14 py-10  bg-[#21618c] text-2xl font-bold text-white'>General Education Development Program Sector</div>
 
